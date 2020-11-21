@@ -1,0 +1,298 @@
+// 版心
+.container{
+    width: 1226px;
+    margin: 0 auto;
+  }
+  // 顶部条line样式
+  .line{
+    margin: 0 .3em;
+    color: #424242;
+  }
+  $m: #ff6700;
+  // 项目开始
+  // 头部部分
+  #header{
+    // 头部-顶部条 
+    .site-topbar{
+      position: relative;
+      z-index: 30;
+      height: 40px;
+      font-size: 12px;
+      color: #b0b0b0;
+      background: #333;
+      // 顶部条-导航栏
+      .topbar-nav{
+        float: left;
+        height: 40px;
+        line-height: 40px
+      }
+      // 顶部条-信息栏
+      .topbar-info{
+        position: relative;
+        float: right;
+        height: 40px;
+        line-height: 40px;
+      }
+      // 顶部条-购物车
+      .topbar-cart{
+        position: relative;
+        float: right;
+        width: 120px;
+        height: 40px;
+        margin-left: 15px;
+        line-height: 40px;
+        .cart-main{
+            position: relative;
+            z-index: 32;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #b0b0b0;
+            background: #424242;
+        }
+      }
+    }
+    // 头部-顶部栏
+    .site-header{
+        z-index: 20;
+        height: 100px;
+        // 顶部栏-logo
+        .header-logo{
+            float: left;
+            width: 62px;
+            margin-top: 22px;
+            .logo{
+                position: relative;
+                display: block;
+                width: 55px;
+                height: 55px;
+                overflow: hidden;
+                background-color: $m;
+                text-indent: -9999px;
+                // logo小图标切换
+                &:hover::before{
+                    margin-left: 55px;
+                    opacity: 0;
+                }
+                &:hover::after{
+                    margin-left: 0;
+                    opacity: 1;
+                }
+                &::before {
+                    background: url(../img/logo-right.png) no-repeat 50% 50%;
+                    opacity: 1;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 1;
+                    width: 55px;
+                    height: 55px;
+                    content: "";
+                    transform-origin: 50% 50%;
+                    transition: all .2s;
+                }
+                &::after{
+                    background: url(../img/logo-left.png) no-repeat 50% 50%;
+                    opacity: 0;
+                    margin-left: -55px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 1;
+                    width: 55px;
+                    height: 55px;
+                    content: "";
+                    transform-origin: 50% 50%;
+                    transition: all .2s;
+                }
+            }
+        }
+        // 顶部栏-导航栏
+        .header-nav{
+            float: left;
+            width: 850px;
+            .nav-list {
+                position: relative;
+                z-index: 10;
+                float: left;
+                width: 1100px;
+                height: 88px;
+                margin: 0;
+                padding: 12px 0 0 30px;
+                list-style-type: none;
+                font-size: 16px;
+                .nav-category{
+                    position: relative;
+                    float: left;
+                    width: 127px;
+                    padding-right: 15px;
+                    .category-item-link{
+                        display: block;
+                        padding: 26px 10px 38px;
+                        color: #333;
+                        transition: color .2s;                        
+                    }
+                    // 顶部栏-二级导航栏
+                    .site-category{
+                        position: absolute;
+                        top: 88px;
+                        left: -92px;
+                        z-index: 21;
+                        width: 234px;
+                        height: 460px;
+                        font-size: 14px;
+                        .site-category-list{
+                            height: 420px;
+                            border: 0;
+                            color: #fff;
+                            background: rgba(105,101,101,.6);
+                            padding: 20px 0;
+                            .category-item{
+                                color: #fff;
+                                height: 42px;
+                                &:hover{
+                                    background: $m;
+                                }
+                                .category-link{
+                                    position: relative;
+                                    display: block;
+                                    padding-left: 30px;
+                                    height: 42px;
+                                    line-height: 42px;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                .nav-item{
+                    float: left;
+                    .item-link{
+                        display: block;
+                        padding: 26px 10px 38px;
+                        color: #333;
+                        transition: color .2s;                        
+                    }
+                    &:hover .item-link{
+                        color: $m;
+                    }
+                }
+            }
+        }
+    }
+}
+// 尾部部分
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  // // 变量 $+变量名
+  // $w:400px;
+  // $h:200px;
+  // $c:red;
+  // $len:50%*10; // 500%
+  // /* 标题样式 */
+  // h1{
+  //   width: $w;
+  //   height: $h;
+  //   color: $c;
+  //   background-color: #ccc;
+  // }
+  
+  // // sass中的注释有两种
+  // // 1. // sass有的注释，不会被编译到css文件中
+  // // /* xxx */ 会被编译到css文件中
+  
+  // // 嵌套语法
+  // .box{
+  //   width: $w;
+  //   background-color: lightblue;
+  //   h2{
+  //     font-size: 30px;
+  //     color: blue;
+  //   }
+  //   .show{
+  //     width: 300px;
+  //     height: 100px;
+  //     span{
+  //       color: red;
+  //     }
+  //     p{
+  //       color: yellow;
+  //     }
+  //   }
+  // }
+  
+  // // & 指向父选择器
+  // a{
+  //   color: blue;
+  //   &:hover{
+  //     color: red;
+  //   }
+  // }
+  // .content{
+  //   width: 500px;
+  //   &-title{
+  //     color: red;
+  //   }
+  //   &-main{
+  //     color: blue;
+  //   }
+  // }
+  
+  // // @import 引入外部样式
+  // @import 'header.scss';
+  
+  // // @mixin 混合器
+  // @mixin nostyle {
+  //   list-style: none;
+  //   li{
+  //     padding: 0;
+  //     color: blue;
+  //   }
+  // }
+  // .list{
+  //   width: 500px;
+  //   @include nostyle;
+  // }
+  
+  // // 混合器传参
+  // @mixin common($w,$h,$c) {
+  //   width: $w;
+  //   height: $h;
+  //   color: $c;
+  // }
+  // .box1{
+  //   background-color: #ccc;
+  //   @include common(500px,200px,red);
+  // }
+  // .box2{
+  //   padding: 10px;
+  //   @include common(300px,100px,blue);
+  // }
+  
+  // // 继承
+  // .box3{
+  //   padding: 20px;
+  //   margin: 10px;
+  //   font-size: 20px;
+  // }
+  // .box4{
+  //   width: 500px;
+  //   background: pink;
+  //   @extend .box3;
+  // }
+  
+  
