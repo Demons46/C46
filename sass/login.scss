@@ -1,0 +1,47 @@
+// 项目开始
+// logo栏
+.header{
+    .header-logo{
+        width: 1130px;
+        margin: 0 auto;
+    }
+}
+// 登录栏
+.wrap{
+    background: url(../img/login-banner.jpg) top center no-repeat;
+    width: 100%;
+    height: 588px;
+    // position: absolute;
+    // left: 0;
+    // top: 98px;
+}
+// 底部栏
+.footer{
+    color: #9d9d9d;
+    text-align: center;
+    height: 80px;
+    margin-top: 80px;
+    font-size: 14px;
+    // 底部栏-语种
+    .footer-area{
+        .area-list{
+            li{
+                margin: 0 5px;
+                display: inline-block;
+                a{
+                    margin-right: 5px;
+                }
+                &:hover a{
+                    color: #000;
+                }
+            }
+        }
+    }
+    // 底部栏-公网
+    .footer-info{
+        margin-top: 15px;
+        a:hover{
+            color: #aaa;
+        }
+    }
+}

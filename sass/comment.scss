@@ -10,449 +10,491 @@
   }
   $m: #ff6700;
   // 项目开始
-  // 头部部分
-  #header{
-    // 头部-顶部条 
-    .site-topbar{
-      position: relative;
-      z-index: 30;
-      height: 40px;
-      font-size: 12px;
-      color: #b0b0b0;
-      background: #333;
-      // 顶部条-导航栏
-      .topbar-nav{
-        float: left;
-        height: 40px;
-        line-height: 40px
-      }
-      // 顶部条-信息栏
-      .topbar-info{
+body{
+    position: relative;
+    height: 100%;
+    // 头部部分
+    #header{
+        // 头部-顶部条 
+        .site-topbar{
         position: relative;
-        float: right;
+        z-index: 30;
         height: 40px;
-        line-height: 40px;
-      }
-      // 顶部条-购物车
-      .topbar-cart{
-        position: relative;
-        float: right;
-        width: 120px;
-        height: 40px;
-        margin-left: 15px;
-        line-height: 40px;
-        .cart-main{
-            position: relative;
-            z-index: 32;
-            display: block;
-            height: 40px;
-            line-height: 40px;
-            text-align: center;
-            color: #b0b0b0;
-            background: #424242;
-        }
-      }
-    }
-    // 头部-顶部栏
-    .site-header{
-        z-index: 20;
-        height: 100px;
-        // 顶部栏-logo
-        .header-logo{
-            float: left;
-            width: 62px;
-            margin-top: 22px;
-            .logo{
+        font-size: 12px;
+        color: #b0b0b0;
+        background: #333;
+            // 顶部条-导航栏
+            .topbar-nav{
+                float: left;
+                height: 40px;
+                line-height: 40px
+            }
+            // 顶部条-信息栏
+            .topbar-info{
                 position: relative;
-                display: block;
-                width: 55px;
-                height: 55px;
-                overflow: hidden;
-                background-color: $m;
-                text-indent: -9999px;
-                // logo小图标切换
-                &:hover::before{
-                    margin-left: 55px;
-                    opacity: 0;
-                }
-                &:hover::after{
-                    margin-left: 0;
-                    opacity: 1;
-                }
-                &::before {
-                    background: url(../img/logo-right.png) no-repeat 50% 50%;
-                    opacity: 1;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    z-index: 1;
-                    width: 55px;
-                    height: 55px;
-                    content: "";
-                    transform-origin: 50% 50%;
-                    transition: all .2s;
-                }
-                &::after{
-                    background: url(../img/logo-left.png) no-repeat 50% 50%;
-                    opacity: 0;
-                    margin-left: -55px;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    z-index: 1;
-                    width: 55px;
-                    height: 55px;
-                    content: "";
-                    transform-origin: 50% 50%;
-                    transition: all .2s;
+                float: right;
+                height: 40px;
+                line-height: 40px;
+            }
+            // 顶部条-购物车
+            .topbar-cart{
+                position: relative;
+                float: right;
+                width: 120px;
+                height: 40px;
+                margin-left: 15px;
+                line-height: 40px;
+                .cart-main{
+                    position: relative;
+                    z-index: 32;
+                    display: block;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #b0b0b0;
+                    background: #424242;
+                    box-sizing: border-box;
+                    padding-left: 18px;
+                    &:hover{
+                        color: $m;
+                        background: #fff;
+                    }
+                    &:hover em .hover{
+                        opacity: 1;
+                    }
+                    &:hover em .static{
+                        opacity: 0;
+                    }
+                    em{
+                        .static{
+                            position: absolute;
+                            top: 10px;
+                            left: 15px;
+                            width: 20px;
+                            height: 20px;
+                        }
+                        .hover{
+                            position: absolute;
+                            top: 10px;
+                            left: 15px;
+                            width: 20px;
+                            height: 20px;
+                            opacity: 0;
+                        }
+                    }
                 }
             }
         }
-        // 顶部栏-导航栏
-        .header-nav{
-            float: left;
-            width: 850px;
-            .nav-list {
-                position: relative;
-                z-index: 10;
+        // 头部-顶部栏
+        .site-header{
+            z-index: 20;
+            height: 100px;
+            // 顶部栏-logo
+            .header-logo{
                 float: left;
-                width: 1100px;
-                height: 88px;
-                margin: 0;
-                padding: 12px 0 0 30px;
-                list-style-type: none;
-                font-size: 16px;
-                .nav-category{
+                width: 62px;
+                margin-top: 22px;
+                .logo{
                     position: relative;
-                    float: left;
-                    width: 127px;
-                    padding-right: 15px;
-                    .category-item-link{
-                        display: block;
-                        padding: 26px 10px 38px;
-                        color: #333;
-                        transition: color .2s;                        
+                    display: block;
+                    width: 55px;
+                    height: 55px;
+                    overflow: hidden;
+                    background-color: $m;
+                    text-indent: -9999px;
+                    // logo小图标切换
+                    &:hover::before{
+                        margin-left: 55px;
+                        opacity: 0;
                     }
-                    // 顶部栏-二级导航栏
-                    .site-category{
+                    &:hover::after{
+                        margin-left: 0;
+                        opacity: 1;
+                    }
+                    &::before {
+                        background: url(../img/logo-right.png) no-repeat 50% 50%;
+                        opacity: 1;
                         position: absolute;
-                        top: 88px;
-                        left: -92px;
-                        z-index: 21;
-                        width: 234px;
-                        height: 460px;
-                        font-size: 14px;
-                        .site-category-list{
-                            height: 420px;
-                            border: 0;
-                            color: #fff;
-                            background: rgba(105,101,101,.6);
-                            padding: 20px 0;
-                            .category-item{
+                        left: 0;
+                        top: 0;
+                        z-index: 1;
+                        width: 55px;
+                        height: 55px;
+                        content: "";
+                        transform-origin: 50% 50%;
+                        transition: all .2s;
+                    }
+                    &::after{
+                        background: url(../img/logo-left.png) no-repeat 50% 50%;
+                        opacity: 0;
+                        margin-left: -55px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        z-index: 1;
+                        width: 55px;
+                        height: 55px;
+                        content: "";
+                        transform-origin: 50% 50%;
+                        transition: all .2s;
+                    }
+                }
+            }
+            // 顶部栏-导航栏
+            .header-nav{
+                float: left;
+                width: 850px;
+                .nav-list {
+                    position: relative;
+                    z-index: 10;
+                    float: left;
+                    width: 1100px;
+                    height: 88px;
+                    margin: 0;
+                    padding: 12px 0 0 30px;
+                    list-style-type: none;
+                    font-size: 16px;
+                    .nav-category{
+                        position: relative;
+                        float: left;
+                        width: 127px;
+                        padding-right: 15px;
+                        .category-item-link{
+                            display: block;
+                            padding: 26px 10px 38px;
+                            color: #333;
+                            transition: color .2s;                        
+                        }
+                        // 顶部栏-二级导航栏
+                        .site-category{
+                            position: absolute;
+                            top: 88px;
+                            left: -92px;
+                            z-index: 21;
+                            width: 234px;
+                            height: 460px;
+                            font-size: 14px;
+                            .site-category-list{
+                                height: 420px;
+                                border: 0;
                                 color: #fff;
-                                height: 42px;
-                                &:hover{
-                                    background: $m;
-                                }
-                                .category-link{
-                                    position: relative;
-                                    display: block;
-                                    padding-left: 30px;
-                                    height: 42px;
-                                    line-height: 42px;
+                                background: rgba(105,101,101,.6);
+                                padding: 20px 0;
+                                .category-item{
                                     color: #fff;
+                                    height: 42px;
+                                    &:hover{
+                                        background: $m;
+                                    }
+                                    .category-link{
+                                        position: relative;
+                                        display: block;
+                                        padding-left: 30px;
+                                        height: 42px;
+                                        line-height: 42px;
+                                        color: #fff;
+                                    }
                                 }
                             }
                         }
                     }
-                }
-                .nav-item{
-                    float: left;
-                    .item-link{
-                        display: block;
-                        padding: 26px 10px 38px;
-                        color: #333;
-                        transition: color .2s;                        
-                    }
-                    &:hover .item-link{
-                        color: $m;
-                    }
-                }
-            }
-        }
-    }
-}
-// 尾部部分
-#footer{
-    // 尾部-上半区
-    .site-footer{
-        // 上半区-服务区
-        .footer-service{
-            padding: 27px 0;
-            border-bottom: 1px solid #e0e0e0;
-            .service-list{
-                margin: 0;
-                padding: 0;
-                list-style-type: none;
-            }
-            li:first-child {
-                border-left: 0;
-            }
-            li{
-                float: left;
-                width: 19.8%;
-                height: 25px;
-                border-left: 1px solid #e0e0e0;
-                font-size: 16px;
-                line-height: 25px;
-                text-align: center;
-                a{
-                    color: #757577;
-                    &:hover{
-                        color: $m;
-                    }
-                }
-            }            
-        }
-        // 上半区-信息区
-        .footer-link{
-            padding: 40px 0;
-            // 信息区-关于我们
-            .link-col{
-                float: left;
-                width: 160px;
-                margin: 0;
-                dt{
-                    margin: -1px 0 26px;
-                    font-size: 14px;
-                    line-height: 1.25;
-                    color: #424242;
-                }
-                dd{
-                    margin: 10px 0 0;
-                    font-size: 12px;
-                    a{
-                        color: #757575;
-                    }
-                    &:hover a{
-                        color: $m;
+                    .nav-item{
+                        float: left;
+                        .item-link{
+                            display: block;
+                            padding: 26px 10px 38px;
+                            color: #333;
+                            transition: color .2s;                        
+                        }
+                        &:hover .item-link{
+                            color: $m;
+                        }
                     }
                 }
             }
-            // 信息区-客服区
-            .link-contact{
+            // 顶部栏-搜索框
+            .header-search{
                 float: right;
-                width: 251px;
-                border-left: 1px solid #e0e0e0;
-                text-align: center;
-                color: #616161;
-                p{
-                    margin-bottom: 5px;
-                }
-                .contact-phone{
-                    font-size: 22px;
-                    line-height: 1;
-                    color: $m;
-                }
-                .contact-time{
-                    margin: 0 0 5px 0;
-                    font-size: 12px;
-                }
-                .contact-btn{
-                    border: 1px solid $m;
-                    background: #fff;
-                    color: $m;
-                    width: 118px;
-                    height: 28px;
-                    font-size: 12px;
-                    line-height: 28px;
-                    display: inline-block;
-                    margin-bottom: 10px;
-                    &:hover{
-                        color: #fff;
-                        background: $m;
+                width: 296px;
+                margin-top: 25px;
+                form{
+                    position: relative;
+                    width: 296px;
+                    height: 50px;
+                    z-index: 20;
+                    .txt-ipt{
+                        position: absolute;
+                        top: 0;
+                        border: 1px solid #e0e0e0;
+                        right: 51px;
+                        z-index: 1;
+                        width: 223px;
+                        height: 48px;
+                        padding: 0 10px;
+                        font-size: 14px;
+                        line-height: 48px;
+                    }
+                    .btn-ipt{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        border: 1px solid #e0e0e0;
+                        z-index: 2;
+                        width: 52px;
+                        height: 50px;
+                        font-size: 24px;
+                        line-height: 24px;
+                        background: #fff;
+                        color: #616161;
                     }
                 }
             }
         }
     }
-    // 尾部-版权区
-    .site-info{
-        padding: 30px 0;
-        font-size: 12px;
-        background: #fafafa;
-        // 版权区-主要信息区
-       .container{
-            position: relative;
-            // 主要信息区-底部logo
-            .logo-footer{
-                width: 57px;
-                height: 57px;
-                margin-right: 10px;
-                background: url(../img/logo-footer.png) no-repeat 50% 50%;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-            // 主要信息区-文字区
-            .info-txt{
-                p{
-                    line-height: 18px;
-                    padding-left: 67px;
+    // 尾部部分
+    #footer{
+        // 尾部-上半区
+        .site-footer{
+            // 上半区-服务区
+            .footer-service{
+                padding: 27px 0;
+                border-bottom: 1px solid #e0e0e0;
+                .service-list{
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
                 }
-                .txt-nav{
-                    a{
-                        color: #757575;
-                    }
+                li:first-child {
+                    border-left: 0;
                 }
-                .txt-card{
-                    color: #b0b0b0;
+                li{
+                    float: left;
+                    width: 19.8%;
+                    height: 25px;
+                    border-left: 1px solid #e0e0e0;
+                    font-size: 16px;
+                    line-height: 25px;
+                    text-align: center;
                     a{
+                        color: #757577;
                         &:hover{
                             color: $m;
                         }
                     }
-                    
-                }
+                }            
             }
-            // 主要信息区-图片区
-            .info-img{
-                padding-left: 67px;
-                height: 28px;
-                margin: 8px 0 15px;
-                a{
-                    display: inline-block;
-                    img{
-                        width: auto;
-                        height: 28px;
-                        margin-left: 0;
+            // 上半区-信息区
+            .footer-link{
+                padding: 40px 0;
+                // 信息区-关于我们
+                .link-col{
+                    float: left;
+                    width: 160px;
+                    margin: 0;
+                    dt{
+                        margin: -1px 0 26px;
+                        font-size: 14px;
+                        line-height: 1.25;
+                        color: #424242;
                     }
-                    .img-big{
-                        height: 40px;
+                    dd{
+                        margin: 10px 0 0;
+                        font-size: 12px;
+                        a{
+                            color: #757575;
+                        }
+                        &:hover a{
+                            color: $m;
+                        }
+                    }
+                }
+                // 信息区-客服区
+                .link-contact{
+                    float: right;
+                    width: 251px;
+                    border-left: 1px solid #e0e0e0;
+                    text-align: center;
+                    color: #616161;
+                    p{
+                        margin-bottom: 5px;
+                    }
+                    .contact-phone{
+                        font-size: 22px;
+                        line-height: 1;
+                        color: $m;
+                    }
+                    .contact-time{
+                        margin: 0 0 5px 0;
+                        font-size: 12px;
+                    }
+                    .contact-btn{
+                        border: 1px solid $m;
+                        background: #fff;
+                        color: $m;
+                        width: 118px;
+                        height: 28px;
+                        font-size: 12px;
+                        line-height: 28px;
+                        display: inline-block;
+                        margin-bottom: 10px;
+                        &:hover{
+                            color: #fff;
+                            background: $m;
+                        }
                     }
                 }
             }
         }
+        // 尾部-版权区
+        .site-info{
+            padding: 30px 0;
+            font-size: 12px;
+            background: #fafafa;
+            // 版权区-主要信息区
+        .container{
+                position: relative;
+                // 主要信息区-底部logo
+                .logo-footer{
+                    width: 57px;
+                    height: 57px;
+                    margin-right: 10px;
+                    background: url(../img/logo-footer.png) no-repeat 50% 50%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                // 主要信息区-文字区
+                .info-txt{
+                    p{
+                        line-height: 18px;
+                        padding-left: 67px;
+                    }
+                    .txt-nav{
+                        a{
+                            color: #757575;
+                        }
+                    }
+                    .txt-card{
+                        color: #b0b0b0;
+                        a{
+                            &:hover{
+                                color: $m;
+                            }
+                        }
+                        
+                    }
+                }
+                // 主要信息区-图片区
+                .info-img{
+                    padding-left: 67px;
+                    height: 28px;
+                    margin: 8px 0 15px;
+                    a{
+                        display: inline-block;
+                        img{
+                            width: auto;
+                            height: 28px;
+                            margin-left: 0;
+                        }
+                        .img-big{
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+        // 版权区-小米结束语
+        .slogan{
+            text-indent: -9999px;
+            overflow: hidden;
+            margin: 40px auto 0;
+            width: 100%;
+            height: 19px;
+            background: url(../img/slogan-xm.png) no-repeat center 0;
+        }
     }
-    // 版权区-小米结束语
-    .slogan{
-        text-indent: -9999px;
-        overflow: hidden;
-        margin: 40px auto 0;
-        width: 100%;
-        height: 19px;
-        background: url(../img/slogan-xm.png) no-repeat center 0;
+    // 侧栏部分
+    #side{
+        position: fixed;
+        bottom: 300px;
+        right: 0;
+        z-index: 99;
+        .side-totop,.side-item{
+            position: relative;
+            display: block;
+            width: 82px;
+            height: 90px;
+            margin-top: -1px;
+            background-color: #fff;
+            border: 1px solid #f5f5f5;
+            text-align: center;
+            &:hover .side-ewm{
+                opacity: 1;
+                display: block;
+            }
+            // 侧栏-二维码
+            .side-ewm{
+                position: absolute;
+                left: -150px;
+                top: 0;
+                padding: 14px;
+                background: #fff;
+                border: 1px solid #f5f5f5;
+                display: none;
+                opacity: 0;
+                .ewm-img{
+                    display: block;
+                    width: 100px;
+                    height: 100px;
+                    margin: 6px auto;
+                }
+                .ewm-txt{
+                    display: block;
+                    width: 70px;
+                    margin: 14px auto 0;
+                    color: #757575;
+                    text-align: center;
+                }
+            }
+            &:hover .side-icon .hover{
+                opacity: 1;
+            }
+            &:hover .side-txt{
+                color: $m;
+            }
+            .side-icon{
+                position: relative;
+                width: 30px;
+                height: 30px;
+                margin: 0 auto 8px;
+                padding-top: 18px;
+                .static{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 30px;
+                    height: 30px;
+                    transition: opacity .3s;
+                }
+                .hover{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 30px;
+                    height: 30px;
+                    opacity: 0;
+                    transition: opacity .3s;
+                   
+                }
+            }
+            .side-txt{
+                color: #757575;
+                transition: color .3s;
+            }
+        }
+        .side-totop{
+            margin-top: 14px;
+            display: none;
+        }
     }
 }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  // // 变量 $+变量名
-  // $w:400px;
-  // $h:200px;
-  // $c:red;
-  // $len:50%*10; // 500%
-  // /* 标题样式 */
-  // h1{
-  //   width: $w;
-  //   height: $h;
-  //   color: $c;
-  //   background-color: #ccc;
-  // }
-  
-  // // sass中的注释有两种
-  // // 1. // sass有的注释，不会被编译到css文件中
-  // // /* xxx */ 会被编译到css文件中
-  
-  // // 嵌套语法
-  // .box{
-  //   width: $w;
-  //   background-color: lightblue;
-  //   h2{
-  //     font-size: 30px;
-  //     color: blue;
-  //   }
-  //   .show{
-  //     width: 300px;
-  //     height: 100px;
-  //     span{
-  //       color: red;
-  //     }
-  //     p{
-  //       color: yellow;
-  //     }
-  //   }
-  // }
-  
-  // // & 指向父选择器
-  // a{
-  //   color: blue;
-  //   &:hover{
-  //     color: red;
-  //   }
-  // }
-  // .content{
-  //   width: 500px;
-  //   &-title{
-  //     color: red;
-  //   }
-  //   &-main{
-  //     color: blue;
-  //   }
-  // }
-  
-  // // @import 引入外部样式
-  // @import 'header.scss';
-  
-  // // @mixin 混合器
-  // @mixin nostyle {
-  //   list-style: none;
-  //   li{
-  //     padding: 0;
-  //     color: blue;
-  //   }
-  // }
-  // .list{
-  //   width: 500px;
-  //   @include nostyle;
-  // }
-  
-  // // 混合器传参
-  // @mixin common($w,$h,$c) {
-  //   width: $w;
-  //   height: $h;
-  //   color: $c;
-  // }
-  // .box1{
-  //   background-color: #ccc;
-  //   @include common(500px,200px,red);
-  // }
-  // .box2{
-  //   padding: 10px;
-  //   @include common(300px,100px,blue);
-  // }
-  
-  // // 继承
-  // .box3{
-  //   padding: 20px;
-  //   margin: 10px;
-  //   font-size: 20px;
-  // }
-  // .box4{
-  //   width: 500px;
-  //   background: pink;
-  //   @extend .box3;
-  // }
-  
-  

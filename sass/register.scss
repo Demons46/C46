@@ -1,0 +1,105 @@
+$m: #ff6700;
+// 项目开始
+body{
+    background: #fafafa;
+    height: 100%;
+    // 资料栏
+    .wrap{
+        padding-bottom: 80px;
+        width: 800px;
+        height: 550px;
+        margin: 100px auto;
+        padding-bottom: 10px;
+        background: #fff;
+        // 资料栏-logo
+        .logo-top{
+            padding-bottom: 40px;
+            display: block;
+            .milogo{
+                width: 49px;
+                height: 48px;
+                margin: 0 auto;
+                display: block;
+                cursor: default;
+                background-image: url(../img/milogo.png);
+            }
+        }
+        // 资料栏-标题
+        .title{
+            h3{
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+        // 资料栏-信息
+        .info{
+            width: 332px;
+            padding: 30px 0;
+            line-height: 20px;
+            margin: 0 auto;
+            div{
+                margin-bottom: 20px;
+            }
+            h4{
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+            input{
+                padding-left: 15px;
+                width: 332px;
+                height: 40px;
+                box-sizing: border-box;
+            }
+            .mi-sub{
+                .sub{
+                    background: $m;
+                    border: 0;
+                    cursor: pointer;
+                    color: #fff;
+                }
+            }
+        }
+        // 资料栏-协议
+        .protocol{
+            margin: 0 auto;
+            width: 332px;
+            padding-top: 40px;
+            color: #aaa;
+            font-size: 14px;
+            text-align: center;
+            a{
+                color: #000;
+            }
+        }
+    }
+    // 底部栏
+    .footer{
+        color: #9d9d9d;
+        text-align: center;
+        height: 80px;
+        margin-top: -80px;
+        font-size: 14px;
+        // 底部栏-语种
+        .footer-area{
+            .area-list{
+                li{
+                    margin: 0 5px;
+                    display: inline-block;
+                    a{
+                        margin-right: 5px;
+                    }
+                    &:hover a{
+                        color: #000;
+                    }
+                }
+            }
+        }
+        // 底部栏-公网
+        .footer-info{
+            margin-top: 15px;
+            a:hover{
+                color: #aaa;
+            }
+        }
+    }
+}

@@ -19,7 +19,7 @@
       <div class="site-topbar">
         <div class="container">
           <div class="topbar-nav">
-            <a href="#">小米商城</a>id
+            <a href="#">小米商城</a>
             <span class="line">|</span>
             <a href="#">MIUI</a>
             <span class="line">|</span>
@@ -48,16 +48,19 @@
           <!-- 顶部条-购物车 -->
           <div class="topbar-cart">
             <a href="#" class="cart-main" id="cart-mini">
-              <em></em>
-              购物车
-              <span id="cart-mini-num">(0)</span>
+              <em>
+                <img src="./img/side-5.png" class="static" alt="">
+                <img src="./img/side-h5.png" class="hover" alt="">
+              </em>
+              购物车 
+              <span id="cart-mini-num"> (0)</span>
             </a>
           </div>
           <!-- 顶部条-登陆注册 -->
           <div class="topbar-info">
-            <a href="#" id="info-login">登录</a>
+            <a href="login.html" id="info-login">登录</a>
             <span class="line">|</span>
-            <a href="#" id="info-register">注册</a>
+            <a href="register.html" id="info-register">注册</a>
             <span class="line">|</span>
             <a href="#">消息通知</a>
           </div>
@@ -67,7 +70,7 @@
       <div class="site-header container">
         <!-- 顶部栏-logo -->
         <div class="header-logo">
-          <a href="#" class="logo">小米商城</a>
+          <a href="#" title="小米官网" class="logo">小米商城</a>
         </div>
         <!-- 顶部栏-导航栏 -->
         <div class="header-nav">
@@ -179,7 +182,13 @@
             </li>
           </ul>
         </div>
-        <div class="header-search"></div>
+        <!-- 顶部栏-搜索框 -->
+        <div class="header-search">
+          <form action="#">
+            <input type="text" class="txt-ipt" name="val">
+            <input type="submit" class="btn-ipt">
+          </form>
+        </div>
       </div>
     </div>
     <!-- 菜单部分 -->
@@ -395,8 +404,58 @@
       </div>
     </div>
   </div>
+  <!-- 侧栏部分 -->
+  <div id="side">
+    <a href="#" class="side-item">
+      <div class="side-icon">
+        <img src="./img/side-1.png" class="static" alt="">
+        <img src="./img/side-h1.png" class="hover" alt="">
+      </div>
+      <span class="side-txt">手机APP</span>
+      <div class="side-ewm">
+        <img class="ewm-img" src="./img/side-ewm.png" alt="">
+        <span class="ewm-txt">
+          扫码领取新人百元礼包
+        </span>
+      </div>
+    </a>
+    <a href="#" class="side-item">
+      <div class="side-icon">
+        <img src="./img/side-2.png" class="static" alt="">
+        <img src="./img/side-h2.png" class="hover" alt="">
+      </div>
+      <span class="side-txt">个人中心</span>
+    </a>
+    <a href="#" class="side-item">
+      <div class="side-icon">
+        <img src="./img/side-3.png" class="static" alt="">
+        <img src="./img/side-h3.png" class="hover" alt="">
+      </div>
+      <span class="side-txt">售后服务</span>
+    </a>
+    <a href="#" class="side-item">
+      <div class="side-icon">
+        <img src="./img/side-4.png" class="static" alt="">
+        <img src="./img/side-h4.png" class="hover" alt="">
+      </div>
+      <span class="side-txt">人工客服</span>
+    </a>
+    <a href="#" class="side-item">
+      <div class="side-icon">
+        <img src="./img/side-5.png" class="static" alt="">
+        <img src="./img/side-h5.png" class="hover" alt="">
+      </div>
+      <span class="side-txt">购物车</span>
+    </a>
+    <a href="#" class="side-totop">
+      <div class="side-icon">
+        <img src="./img/totop.png" class="static" alt="">
+        <img src="./img/totop-h.png" class="hover" alt="">
+      </div>
+      <span class="side-txt">回顶部</span>
+    </a>
+  </div>
   <script src="./js/jquery-1.8.3.min.js"></script>
   <script src="./js/index.js"></script>
 </body>
-
 </html>
