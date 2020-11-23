@@ -5,7 +5,7 @@
   }
   // 顶部条line样式
   .line{
-    margin: 0 .3em;
+    margin: 1px;
     color: #424242;
   }
   $m: #ff6700;
@@ -183,7 +183,167 @@
     }
 }
 // 尾部部分
-
+#footer{
+    // 尾部-上半区
+    .site-footer{
+        // 上半区-服务区
+        .footer-service{
+            padding: 27px 0;
+            border-bottom: 1px solid #e0e0e0;
+            .service-list{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+            li:first-child {
+                border-left: 0;
+            }
+            li{
+                float: left;
+                width: 19.8%;
+                height: 25px;
+                border-left: 1px solid #e0e0e0;
+                font-size: 16px;
+                line-height: 25px;
+                text-align: center;
+                a{
+                    color: #757577;
+                    &:hover{
+                        color: $m;
+                    }
+                }
+            }            
+        }
+        // 上半区-信息区
+        .footer-link{
+            padding: 40px 0;
+            // 信息区-关于我们
+            .link-col{
+                float: left;
+                width: 160px;
+                margin: 0;
+                dt{
+                    margin: -1px 0 26px;
+                    font-size: 14px;
+                    line-height: 1.25;
+                    color: #424242;
+                }
+                dd{
+                    margin: 10px 0 0;
+                    font-size: 12px;
+                    a{
+                        color: #757575;
+                    }
+                    &:hover a{
+                        color: $m;
+                    }
+                }
+            }
+            // 信息区-客服区
+            .link-contact{
+                float: right;
+                width: 251px;
+                border-left: 1px solid #e0e0e0;
+                text-align: center;
+                color: #616161;
+                p{
+                    margin-bottom: 5px;
+                }
+                .contact-phone{
+                    font-size: 22px;
+                    line-height: 1;
+                    color: $m;
+                }
+                .contact-time{
+                    margin: 0 0 5px 0;
+                    font-size: 12px;
+                }
+                .contact-btn{
+                    border: 1px solid $m;
+                    background: #fff;
+                    color: $m;
+                    width: 118px;
+                    height: 28px;
+                    font-size: 12px;
+                    line-height: 28px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    &:hover{
+                        color: #fff;
+                        background: $m;
+                    }
+                }
+            }
+        }
+    }
+    // 尾部-版权区
+    .site-info{
+        padding: 30px 0;
+        font-size: 12px;
+        background: #fafafa;
+        // 版权区-主要信息区
+       .container{
+            position: relative;
+            // 主要信息区-底部logo
+            .logo-footer{
+                width: 57px;
+                height: 57px;
+                margin-right: 10px;
+                background: url(../img/logo-footer.png) no-repeat 50% 50%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            // 主要信息区-文字区
+            .info-txt{
+                p{
+                    line-height: 18px;
+                    padding-left: 67px;
+                }
+                .txt-nav{
+                    a{
+                        color: #757575;
+                    }
+                }
+                .txt-card{
+                    color: #b0b0b0;
+                    a{
+                        &:hover{
+                            color: $m;
+                        }
+                    }
+                    
+                }
+            }
+            // 主要信息区-图片区
+            .info-img{
+                padding-left: 67px;
+                height: 28px;
+                margin: 8px 0 15px;
+                a{
+                    display: inline-block;
+                    img{
+                        width: auto;
+                        height: 28px;
+                        margin-left: 0;
+                    }
+                    .img-big{
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+    // 版权区-小米结束语
+    .slogan{
+        text-indent: -9999px;
+        overflow: hidden;
+        margin: 40px auto 0;
+        width: 100%;
+        height: 19px;
+        background: url(../img/slogan-xm.png) no-repeat center 0;
+    }
+}
   
   
   
