@@ -1,47 +1,140 @@
 // 项目开始
-// logo栏
-.header{
-    .header-logo{
-        width: 1130px;
-        margin: 0 auto;
-    }
+.container{
+    width: 1130px;
+    margin: 0 auto;
+}
+$m: #ff6700;
+// 登录line
+.line{
+    width: 1px;
+    height: 24px;
+    margin: 0 35px 0 42px;
+    border: 1px solid #e0e0e0;
+    background: #e0e0e0;
 }
 // 登录栏
-.wrap{
-    background: url(../img/login-banner.jpg) top center no-repeat;
-    width: 100%;
-    height: 588px;
-    // position: absolute;
-    // left: 0;
-    // top: 98px;
-}
-// 底部栏
-.footer{
-    color: #9d9d9d;
-    text-align: center;
-    height: 80px;
-    margin-top: 80px;
-    font-size: 14px;
-    // 底部栏-语种
-    .footer-area{
-        .area-list{
-            li{
-                margin: 0 5px;
-                display: inline-block;
-                a{
-                    margin-right: 5px;
-                }
-                &:hover a{
-                    color: #000;
+html,body{
+    height: 100%;
+    #app{
+        height: 100%;
+        // logo栏
+        .header{
+            .header-logo{
+                width: 1130px;
+                margin: 0 auto;
+            }
+        }
+        // 登录栏
+        .wrap{
+            background: url(../img/login-banner.jpg) top center no-repeat;
+            width: 100%;
+            height: 588px;
+            .container{
+                position: relative;
+                height: 100%;
+                .mi-login{
+                    width: 410px;
+                    height: 526px;
+                    background: #fff;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    .login-header{
+                        text-align: center;
+                        line-height: 80px;
+                        font-size: 24px;
+                        a{
+                            color: #666;
+                            &:hover{
+                                color: $m;
+                            }
+                        }
+                        .code-login{
+                            color: $m;
+                        }
+                    }
+                    .login-info{
+                        .info-ipt{
+                            text-align: center;
+                            input{
+                                width: 340px;
+                                height: 45px;
+                                margin-bottom: 14px;
+                                border: 1px solid #e0e0e0;
+                                font-size: 14px;
+                                box-sizing: border-box;
+                                padding-left: 15px;
+                            }
+                        }
+                        .info-sub{
+                            text-align: center;
+                            margin-top: 20px;
+                            margin-bottom: 15px;
+                            .sub-btn{
+                                width: 340px;
+                                height: 45px;
+                                text-align: center;
+                                line-height: 45px;
+                                border: 0;
+                                background: $m;
+                                cursor: pointer;
+                                color: #fff;
+                            }
+                        }
+                        .info-way{
+                            text-align: center;
+                            .way-phone{
+                                color: $m;
+                                font-size: 14px;
+                            }
+                            .way-txt{
+                                margin-top: 30px;
+                                color: #aaa;
+                                font-size: 14px;
+                                a:hover{
+                                    color: $m;
+                                }
+                            }
+                            .way-img{
+                                margin-top: 100px;
+                                a{
+                                    margin: 0 18px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
-    }
-    // 底部栏-公网
-    .footer-info{
-        margin-top: 15px;
-        a:hover{
-            color: #aaa;
+        // 底部栏
+        .footer{
+            color: #9d9d9d;
+            text-align: center;
+            height: 80px;
+            margin-top: 80px;
+            font-size: 14px;
+            // 底部栏-语种
+            .footer-area{
+                .area-list{
+                    li{
+                        margin: 0 5px;
+                        display: inline-block;
+                        a{
+                            margin-right: 5px;
+                        }
+                        &:hover a{
+                            color: #000;
+                        }
+                    }
+                }
+            }
+            // 底部栏-公网
+            .footer-info{
+                margin-top: 15px;
+                a:hover{
+                    color: #aaa;
+                }
+            }
         }
     }
 }

@@ -1,10 +1,303 @@
+$m: #ff6700;
 // 菜单部分
 #menu{
   position: relative;
   z-index: 9;
-  height: 1000px;
   // 菜单-banner图
-  
-
+  .menu-banner{
+    // 轮播图
+    .swiper-container{
+      width: 1226px;
+      height: 460px;
+      .swiper-wrapper{
+        .swiper-slide{
+          img{
+            width: 1226px;
+            height: 460px;
+          }
+        }
+      }
+      .swiper-pagination{
+        width: 400px;
+        left: auto;
+        right: 30px;
+        bottom: 20px;
+        text-align: right;
+      }
+      .swiper-button-prev{
+        left: 250px;
+      }
+    } 
+  }
+  // 菜单-通道图
+  .menu-aisle{
+    margin-top: 14px;
+    // 通道图-左边
+    .aisle-left{
+      width: 234px;
+      float: left;
+      .left-list{
+        margin: 0;
+        padding: 3px;
+        list-style-type: none;
+        font-size: 12px;
+        text-align: center;
+        background: #5f5750;
+        li{
+          position: relative;
+          float: left;
+          width: 70px;
+          height: 82px;
+          padding: 0 3px;
+          &::before{
+            position: absolute;
+            content: "";
+            background: #665e57;
+            top: -1px;
+            left: 6px;
+            width: 64px;
+            height: 1px;
+          }
+          &::after{
+            position: absolute;
+            content: "";
+            background: #665e57;
+            top: 6px;
+            left: 0;
+            width: 1px;
+            height: 70px;
+          }
+          a{
+            display: block;
+            padding-top: 18px;
+            text-overflow: ellipsis;
+            color: #fff;
+            opacity: .7;
+            transition: opacity .2s;
+            &:hover{
+              color: #fff;
+            }
+            img{
+              display: block;
+              width: 24px;
+              height: 24px;
+              margin: 0 auto 4px;
+            }
+          }
+        }
+      }
+    }
+    // 通道图-右边
+    .aisle-right{
+      width: 978px;
+      float: left;
+      margin-left: 14px;
+      .right-list{
+        li{
+          float: left;
+          width: 316px;
+          height: 170px;
+          margin-left: 15px;
+          a{
+            width: 100%;
+            height: 100%;
+            img{
+              width: 100%;
+            }
+          }
+        }
+        .list-item{
+          float: left;
+          width: 316px;
+          height: 170px;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
 }
 // 主体部分
+#main{
+  padding-top: 4px;
+  padding-bottom: 12px;
+  background: #f5f5f5;
+  margin: 20px 0;
+  .container{
+    // 主体-倒计时
+    .main-time{
+      margin-bottom: 22px;
+      position: relative;
+      .time-title{
+        position: relative;
+        height: 58px;
+        .title{
+          margin: 0;
+          font-size: 22px;
+          font-weight: 200;
+          line-height: 58px;
+          color: #333;
+        }
+      }
+      .time-info{
+        .info-time{
+          border-top-color: #e53935;
+          height: 300px;
+          padding-top: 39px;
+          border-top-width: 1px;
+          border-top-style: solid;
+          background: #f1eded;
+          text-align: center;
+          width: 234px;
+          float: left;
+          .time-round{
+            font-size: 21px;
+            color: #ef3a3b;
+            padding-top: 15px;
+          }
+          img{
+            margin: 25px auto;
+          }
+          .time-desc{
+            color: rgba(0,0,0,.54);
+            font-size: 15px;
+          }
+        }
+        .info-goods{
+          width: 978px;
+          margin-left: 14px;
+          float: left;
+          text-align: center;
+          .swiper-wrapper{
+            overflow: hidden;
+            .swiper-slide{
+              .swiper-slide-1{
+                width: 234px;
+                margin-right: 10px;
+                background: rgb(250, 250, 250);
+                float: left;
+                a{
+                  display: block;
+                  height: 300px;
+                  padding-top: 39px;
+                  position: relative;
+                  .content{
+                    .content-img{
+                      display: block;
+                      width: 160px;
+                      margin: 0 auto 22px;
+                      img{
+                        width: 160px;
+                        height: 160px;
+                      }
+                    }
+                    .content-title{
+                      margin: 0 20px 3px;
+                      font-size: 14px;
+                      font-weight: 400;
+                      text-overflow: ellipsis;
+                      color: #212121;
+                      overflow: hidden;
+                      white-space: nowrap;
+                    }
+                    .content-desc{
+                      height: 18px;
+                      margin: 0 20px 12px;
+                      font-size: 12px;
+                      text-overflow: ellipsis;
+                      color: #b0b0b0;
+                      overflow: hidden;
+                      white-space: nowrap;
+                    }
+                    .content-price{
+                      margin: 0;
+                      color: $m;
+                      span{
+                      color: $m;
+                      }
+                      del{
+                        color: #b0b0b0;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .swiper-button-next,.swiper-button-prev{
+            top: 50px;
+            left: 1160px;
+            width: 0px;
+            height: 0px;
+            img{
+              width: 12px;
+              height: 12px;
+            }
+          }
+          .swiper-button-next{
+            left: 1180px;
+          }
+        }
+      }
+    }
+    // 主体banner1
+    .mian-img1{
+      height: 120px;
+      margin: 22px 0;
+      overflow: hidden;
+    }
+    // 主体-模块一
+    .main-site1{
+      margin-bottom: 8px;
+      .site1-title{
+        position: relative;
+        height: 58px;
+        h2{
+          margin: 0;
+          font-size: 22px;
+          font-weight: 200;
+          line-height: 58px;
+          color: #333;
+        }
+      }
+      .site1-info{
+        .info-left{
+          width: 234px;
+          ul{
+            margin: 0 0 -14px -14px;
+            li{
+              height: 614px;
+              a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+        .info-right{
+          width: 978px;
+        }
+      }
+    }
+    // 主体banner1
+    .mian-img2{
+      height: 120px;
+      margin: 22px 0;
+      overflow: hidden;
+    }
+    // 主体-模块二
+    .main-site2{
+
+    }
+    // 主体banner2
+    .mian-img3{
+      height: 120px;
+      margin: 22px 0;
+      overflow: hidden;
+    }
+  }
+}

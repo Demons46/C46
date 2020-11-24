@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>小米商城</title>
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./tool/swiper.min.css">
   <link rel="stylesheet" href="./css/comment.css">
   <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -52,7 +53,7 @@
                 <img src="./img/side-5.png" class="static" alt="">
                 <img src="./img/side-h5.png" class="hover" alt="">
               </em>
-              购物车 
+              购物车
               <span id="cart-mini-num"> (0)</span>
             </a>
           </div>
@@ -67,139 +68,538 @@
         </div>
       </div>
       <!-- 头部-顶部栏 -->
-      <div class="site-header container">
-        <!-- 顶部栏-logo -->
-        <div class="header-logo">
-          <a href="#" title="小米官网" class="logo">小米商城</a>
+      <div class="site-header">
+        <div class="container clearfix">
+          <!-- 顶部栏-logo -->
+          <div class="header-logo">
+            <a href="#" title="小米官网" class="logo">小米商城</a>
+          </div>
+          <!-- 顶部栏-导航栏 -->
+          <div class="header-nav">
+            <ul class="nav-list clearfix">
+              <li class="nav-category">
+                <a href="#" class="category-item-link"></a>
+                <!-- 导航栏-二级导航栏 -->
+                <div class="site-category">
+                  <ul class="site-category-list clearfix">
+                    <li class="category-item">
+                      <a href="#" class="category-link">手机 电话卡</a>
+                      <img src="" alt="">
+                      <div class="children clearfix">
+                        <ul class="children-list clearfix"></ul>
+                      </div>
+                    </li>
+                    <li class="category-item">
+                      <a href="#" class="category-link">电视 盒子</a>
+                      <img src="" alt="">
+                      <div class="children clearfix">
+                        <ul class="children-list clearfix"></ul>
+                      </div>
+                    </li>
+                    <li class="category-item">
+                      <a href="#" class="category-link">笔记本 显示器</a>
+                      <img src="" alt="">
+                      <div class="children clearfix">
+                        <ul class="children-list clearfix"></ul>
+                      </div>
+                    </li>
+                    <li class="category-item">
+                      <a href="#" class="category-link">家电 插线板</a>
+                      <img src="" alt="">
+                      <div class="children clearfix">
+                        <ul class="children-list clearfix"></ul>
+                      </div>
+                    </li>
+                    <li class="category-item">
+                      <a href="#" class="category-link">出行 穿戴</a>
+                      <img src="" alt="">
+                      <div class="children clearfix">
+                        <ul class="children-list clearfix"></ul>
+                      </div>
+                    </li>
+                    <li class="category-item">
+                      <a href="#" class="category-link">智能 路由器</a>
+                      <img src="" alt="">
+                      <div class="children clearfix">
+                        <ul class="children-list clearfix"></ul>
+                      </div>
+                    </li>
+                    <li class="category-item">
+                      <a href="#" class="category-link">电源 配件</a>
+                      <img src="" alt="">
+                      <div class="children clearfix">
+                        <ul class="children-list clearfix"></ul>
+                      </div>
+                    </li>
+                    <li class="category-item">
+                      <a href="#" class="category-link">健康 儿童</a>
+                      <img src="" alt="">
+                      <div class="children clearfix">
+                        <ul class="children-list clearfix"></ul>
+                      </div>
+                    </li>
+                    <li class="category-item">
+                      <a href="#" class="category-link">耳机 音箱</a>
+                      <img src="" alt="">
+                      <div class="children clearfix">
+                        <ul class="children-list clearfix"></ul>
+                      </div>
+                    </li>
+                    <li class="category-item">
+                      <a href="#" class="category-link">生活 箱包</a>
+                      <img src="" alt="">
+                      <div class="children clearfix">
+                        <ul class="children-list clearfix"></ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="item-link">小米手机</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="item-link">Redmi 红米</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="item-link">电视</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="item-link">笔记本</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="item-link">家电</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="item-link">路由器</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="item-link">智能硬件</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="item-link">服务</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="item-link">社区</a>
+              </li>
+            </ul>
+          </div>
+          <!-- 顶部栏-搜索框 -->
+          <div class="header-search">
+            <form action="#">
+              <input type="text" class="txt-ipt" name="val">
+              <input type="submit" class="btn-ipt">
+            </form>
+          </div>
         </div>
-        <!-- 顶部栏-导航栏 -->
-        <div class="header-nav">
-          <ul class="nav-list clearfix">
-            <li class="nav-category">
-              <a href="#" class="category-item-link"></a>
-              <!-- 导航栏-二级导航栏 -->
-              <div class="site-category">
-                <ul class="site-category-list clearfix">
-                  <li class="category-item">
-                    <a href="#" class="category-link">手机 电话卡</a>                    
-                    <img src="" alt="">
-                    <div class="children clearfix">
-                      <ul class="children-list clearfix"></ul>
-                    </div>
-                  </li>
-                  <li class="category-item">
-                    <a href="#" class="category-link">电视 盒子</a>
-                    <img src="" alt="">
-                    <div class="children clearfix">
-                      <ul class="children-list clearfix"></ul>
-                    </div>
-                  </li>
-                  <li class="category-item">
-                    <a href="#" class="category-link">笔记本 显示器</a>
-                    <img src="" alt="">
-                    <div class="children clearfix">
-                      <ul class="children-list clearfix"></ul>
-                    </div>
-                  </li>
-                  <li class="category-item">
-                    <a href="#" class="category-link">家电 插线板</a>
-                    <img src="" alt="">
-                    <div class="children clearfix">
-                      <ul class="children-list clearfix"></ul>
-                    </div>
-                  </li>
-                  <li class="category-item">
-                    <a href="#" class="category-link">出行 穿戴</a>
-                    <img src="" alt="">
-                    <div class="children clearfix">
-                      <ul class="children-list clearfix"></ul>
-                    </div>
-                  </li>
-                  <li class="category-item">
-                    <a href="#" class="category-link">智能 路由器</a>
-                    <img src="" alt="">
-                    <div class="children clearfix">
-                      <ul class="children-list clearfix"></ul>
-                    </div>
-                  </li>
-                  <li class="category-item">
-                    <a href="#" class="category-link">电源 配件</a>
-                    <img src="" alt="">
-                    <div class="children clearfix">
-                      <ul class="children-list clearfix"></ul>
-                    </div>
-                  </li>
-                  <li class="category-item">
-                    <a href="#" class="category-link">健康 儿童</a>
-                    <img src="" alt="">
-                    <div class="children clearfix">
-                      <ul class="children-list clearfix"></ul>
-                    </div>
-                  </li>
-                  <li class="category-item">
-                    <a href="#" class="category-link">耳机 音箱</a>
-                    <img src="" alt="">
-                    <div class="children clearfix">
-                      <ul class="children-list clearfix"></ul>
-                    </div>
-                  </li>
-                  <li class="category-item">
-                    <a href="#" class="category-link">生活 箱包</a>
-                    <img src="" alt="">
-                    <div class="children clearfix">
-                      <ul class="children-list clearfix"></ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="item-link">小米手机</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="item-link">Redmi 红米</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="item-link">电视</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="item-link">笔记本</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="item-link">家电</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="item-link">路由器</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="item-link">智能硬件</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="item-link">服务</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="item-link">社区</a>
-            </li>
-          </ul>
-        </div>
-        <!-- 顶部栏-搜索框 -->
-        <div class="header-search">
-          <form action="#">
-            <input type="text" class="txt-ipt" name="val">
-            <input type="submit" class="btn-ipt">
-          </form>
-        </div>
+        <!-- 顶部栏-下拉菜单 -->
+        <div class="header-pull"></div>
       </div>
     </div>
     <!-- 菜单部分 -->
     <div id="menu">
       <!-- 菜单-banner图 -->
-      <div class="menu-banner"></div>
+      <div class="menu-banner container">
+        <!-- 轮播图 -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/banner1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner2.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner3.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner4.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner5.webp" alt="">
+            </div>
+          </div>
+          <!-- 分页器 -->
+          <div class="swiper-pagination"></div>
+          <!-- 导航按钮 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
       <!-- 菜单-通道图 -->
-      <div class="menu-aisle"></div>
+      <div class="menu-aisle clearfix">
+        <div class="container clearfix">
+          <!-- 通道图-左边 -->
+          <div class="aisle-left clearfix">
+            <ul class="left-list clearfix">
+              <li>
+                <a href="#">
+                  <img src="./img/aisle-1.png" alt="">
+                  小米秒杀
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/aisle-2.png" alt="">
+                  企业团购
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/aisle-3.png" alt="">
+                  F码通道
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/aisle-4.png" alt="">
+                  米粉卡
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/aisle-5.png" alt="">
+                  以旧换新
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/aisle-6.png" alt="">
+                  话费充值
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- 通道图-右边 -->
+          <div class="aisle-right clearfix">
+            <ul class="right-list clearfix">
+              <li class="list-item">
+                <a href="#">
+                  <img src="./img/aisle1.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/aisle2.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/aisle3.jpg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- 主体部分 -->
-    <div id="main"></div>
+    <div id="main">
+      <div class="container">
+        <!-- 主体-计时器 -->
+        <div class="main-time">
+          <div class="time-title">
+            <h2 class="title">
+              小米闪购
+            </h2>
+          </div>
+          <div class="time-info clearfix">
+            <div class="info-time">
+              <div class="time-round">14:00 场</div>
+              <img src="./img/time.jpg" alt="">
+              <div class="time-desc">距离结束还有</div>
+              <div></div>
+            </div>
+            <div class="info-goods">
+              <div class="swiper-container-2">
+                <ul class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <li class="swiper-slide-1">
+                      <a href="#">
+                        <div class="content">
+                          <div class="content-img">
+                            <img src="./img/time1.webp" alt="">
+                          </div>
+                          <h3 class="content-title">
+                            自清洁|米家互联网空调1.5匹
+                          </h3>
+                          <p class="content-desc">
+                            变频,高效制冷热,自清洁
+                          </p>
+                          <p class="content-price">
+                            <span>1799元</span>
+                            <del>2399元</del>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide-1">
+                      <a href="#">
+                        <div class="content">
+                          <div class="content-img">
+                            <img src="./img/time2.webp" alt="">
+                          </div>
+                          <h3 class="content-title">
+                            日常元素抽纸青春版24包/箱
+                          </h3>
+                          <p class="content-desc">
+                            精选原生竹浆,健康环保
+                          </p>
+                          <p class="content-price">
+                            <span>27.9元</span>
+                            <del>32.9元</del>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide-1">
+                      <a href="#">
+                        <div class="content">
+                          <div class="content-img">
+                            <img src="./img/time3.webp" alt="">
+                          </div>
+                          <h3 class="content-title">
+                            Redmi全自动波轮洗衣机1S ...
+                          </h3>
+                          <p class="content-desc">
+                            小身材大容量,可预约
+                          </p>
+                          <p class="content-price">
+                            <span>799元</span>
+                            <del>899元</del>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide-1">
+                      <a href="#">
+                        <div class="content">
+                          <div class="content-img">
+                            <img src="./img/time4.webp" alt="">
+                          </div>
+                          <h3 class="content-title">
+                            智能积木公路赛车白色
+                          </h3>
+                          <p class="content-desc">
+                            烧脑搭建,尽兴狂奔
+                          </p>
+                          <p class="content-price">
+                            <span>229元</span>
+                            <del>299元</del>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                  <div class="swiper-slide">
+                    <li class="swiper-slide-1">
+                      <a href="#">
+                        <div class="content">
+                          <div class="content-img">
+                            <img src="./img/time5.webp" alt="">
+                          </div>
+                          <h3 class="content-title">
+                            自清洁|米家互联网空调1.5匹
+                          </h3>
+                          <p class="content-desc">
+                            变频,高效制冷热,自清洁
+                          </p>
+                          <p class="content-price">
+                            <span>1799元</span>
+                            <del>2399元</del>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide-1">
+                      <a href="#">
+                        <div class="content">
+                          <div class="content-img">
+                            <img src="./img/time6.webp" alt="">
+                          </div>
+                          <h3 class="content-title">
+                            日常元素抽纸青春版24包/箱
+                          </h3>
+                          <p class="content-desc">
+                            精选原生竹浆,健康环保
+                          </p>
+                          <p class="content-price">
+                            <span>27.9元</span>
+                            <del>32.9元</del>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide-1">
+                      <a href="#">
+                        <div class="content">
+                          <div class="content-img">
+                            <img src="./img/time7.webp" alt="">
+                          </div>
+                          <h3 class="content-title">
+                            Redmi全自动波轮洗衣机1S ...
+                          </h3>
+                          <p class="content-desc">
+                            小身材大容量,可预约
+                          </p>
+                          <p class="content-price">
+                            <span>799元</span>
+                            <del>899元</del>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide-1">
+                      <a href="#">
+                        <div class="content">
+                          <div class="content-img">
+                            <img src="./img/time8.webp" alt="">
+                          </div>
+                          <h3 class="content-title">
+                            智能积木公路赛车白色
+                          </h3>
+                          <p class="content-desc">
+                            烧脑搭建,尽兴狂奔
+                          </p>
+                          <p class="content-price">
+                            <span>229元</span>
+                            <del>299元</del>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                  <div class="swiper-slide">
+                    <li class="swiper-slide-1">
+                      <a href="#">
+                        <div class="content">
+                          <div class="content-img">
+                            <img src="./img/time9.webp" alt="">
+                          </div>
+                          <h3 class="content-title">
+                            自清洁|米家互联网空调1.5匹
+                          </h3>
+                          <p class="content-desc">
+                            变频,高效制冷热,自清洁
+                          </p>
+                          <p class="content-price">
+                            <span>1799元</span>
+                            <del>2399元</del>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide-1">
+                      <a href="#">
+                        <div class="content">
+                          <div class="content-img">
+                            <img src="./img/time10.webp" alt="">
+                          </div>
+                          <h3 class="content-title">
+                            日常元素抽纸青春版24包/箱
+                          </h3>
+                          <p class="content-desc">
+                            精选原生竹浆,健康环保
+                          </p>
+                          <p class="content-price">
+                            <span>27.9元</span>
+                            <del>32.9元</del>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide-1">
+                      <a href="#">
+                        <div class="content">
+                          <div class="content-img">
+                            <img src="./img/time11.webp" alt="">
+                          </div>
+                          <h3 class="content-title">
+                            Redmi全自动波轮洗衣机1S ...
+                          </h3>
+                          <p class="content-desc">
+                            小身材大容量,可预约
+                          </p>
+                          <p class="content-price">
+                            <span>799元</span>
+                            <del>899元</del>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide-1">
+                      <a href="#">
+                        <div class="content">
+                          <div class="content-img">
+                            <img src="./img/time12.webp" alt="">
+                          </div>
+                          <h3 class="content-title">
+                            智能积木公路赛车白色
+                          </h3>
+                          <p class="content-desc">
+                            烧脑搭建,尽兴狂奔
+                          </p>
+                          <p class="content-price">
+                            <span>229元</span>
+                            <del>299元</del>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+                <!-- 导航按钮 -->
+                <div class="swiper-button-prev swiper-button-black">
+                  <img src="./img/swiper-p.png" alt="">
+                </div>
+                <div class="swiper-button-next swiper-button-black">
+                  <img src="./img/swiper-n.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 主体-banner图1 -->
+        <div class="main-img1">
+          <a href="#">
+            <img src="./img/main-1.webp" alt="">
+          </a>
+        </div>
+        <!-- 主体-模块1 -->
+        <div class="main-site1">
+          <div class="site1-title">
+            <h2 class="title"></h2>
+            <div class="more"></div>
+          </div>
+          <div class="site1-info">
+            <div class="info-left">
+              <ul class="clearfix">
+                <li>
+                  <a href="#">
+                    <img src="./img/t-j.webp" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="info-right"></div>
+          </div>
+        </div>
+        <!-- 主体-banner图2 -->
+        <div class="main-img2">
+          <a href="#">
+            <img src="./img/main-2.webp" alt="">
+          </a>
+        </div>
+        <!-- 主体-模块2 -->
+        <div class="main-site2"></div>
+        <!-- 主体-banner图3 -->
+        <div class="main-img3">
+          <a href="#">
+            <img src="./img/main-3.webp" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
     <!-- 尾部部分 -->
     <div id="footer">
       <!-- 尾部-服务区 -->
@@ -305,7 +705,7 @@
               <dd>
                 <a href="#">防伪查询</a>
               </dd>
-            </dl>  
+            </dl>
             <div class="link-contact">
               <p class="contact-phone">400-100-5678</p>
               <p class="contact-time">8:00-18:00（仅收市话费）</p>
@@ -318,7 +718,7 @@
                 <a href="#"></a>
                 <a href="#"></a>
               </div>
-            </div>                        
+            </div>
           </div>
         </div>
       </div>
@@ -360,7 +760,7 @@
               <a href="#">Select Location</a>
             </p>
             <p class="txt-card">
-              © 
+              ©
               <a href="#">mi.com </a>
               <a href="#">京ICP证110507号 </a>
               <a href="#">京ICP备10046444号 </a>
@@ -375,7 +775,7 @@
               <a href="#">网络食品经营备案 </a>
               <a href="#">京食药网食备202010048 </a>
               <a href="#">食品经营许可证 </a><br>
-              违法和不良信息举报电话：171-5104-4404 
+              违法和不良信息举报电话：171-5104-4404
               <a href="#">知识产权侵权投诉 </a>
               本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
             </p>
@@ -455,7 +855,9 @@
       <span class="side-txt">回顶部</span>
     </a>
   </div>
-  <script src="./js/jquery-1.8.3.min.js"></script>
+  <script src="./tool/jquery-1.8.3.min.js"></script>
+  <script src="./tool/swiper.min.js"></script>
   <script src="./js/index.js"></script>
 </body>
+
 </html>

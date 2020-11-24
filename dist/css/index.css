@@ -1,4 +1,216 @@
 #menu {
   position: relative;
-  z-index: 9;
-  height: 1000px; }
+  z-index: 9; }
+  #menu .menu-banner .swiper-container {
+    width: 1226px;
+    height: 460px; }
+    #menu .menu-banner .swiper-container .swiper-wrapper .swiper-slide img {
+      width: 1226px;
+      height: 460px; }
+    #menu .menu-banner .swiper-container .swiper-pagination {
+      width: 400px;
+      left: auto;
+      right: 30px;
+      bottom: 20px;
+      text-align: right; }
+    #menu .menu-banner .swiper-container .swiper-button-prev {
+      left: 250px; }
+  #menu .menu-aisle {
+    margin-top: 14px; }
+    #menu .menu-aisle .aisle-left {
+      width: 234px;
+      float: left; }
+      #menu .menu-aisle .aisle-left .left-list {
+        margin: 0;
+        padding: 3px;
+        list-style-type: none;
+        font-size: 12px;
+        text-align: center;
+        background: #5f5750; }
+        #menu .menu-aisle .aisle-left .left-list li {
+          position: relative;
+          float: left;
+          width: 70px;
+          height: 82px;
+          padding: 0 3px; }
+          #menu .menu-aisle .aisle-left .left-list li::before {
+            position: absolute;
+            content: "";
+            background: #665e57;
+            top: -1px;
+            left: 6px;
+            width: 64px;
+            height: 1px; }
+          #menu .menu-aisle .aisle-left .left-list li::after {
+            position: absolute;
+            content: "";
+            background: #665e57;
+            top: 6px;
+            left: 0;
+            width: 1px;
+            height: 70px; }
+          #menu .menu-aisle .aisle-left .left-list li a {
+            display: block;
+            padding-top: 18px;
+            text-overflow: ellipsis;
+            color: #fff;
+            opacity: .7;
+            transition: opacity .2s; }
+            #menu .menu-aisle .aisle-left .left-list li a:hover {
+              color: #fff; }
+            #menu .menu-aisle .aisle-left .left-list li a img {
+              display: block;
+              width: 24px;
+              height: 24px;
+              margin: 0 auto 4px; }
+    #menu .menu-aisle .aisle-right {
+      width: 978px;
+      float: left;
+      margin-left: 14px; }
+      #menu .menu-aisle .aisle-right .right-list li {
+        float: left;
+        width: 316px;
+        height: 170px;
+        margin-left: 15px; }
+        #menu .menu-aisle .aisle-right .right-list li a {
+          width: 100%;
+          height: 100%; }
+          #menu .menu-aisle .aisle-right .right-list li a img {
+            width: 100%; }
+      #menu .menu-aisle .aisle-right .right-list .list-item {
+        float: left;
+        width: 316px;
+        height: 170px;
+        margin-left: 0px; }
+
+#main {
+  padding-top: 4px;
+  padding-bottom: 12px;
+  background: #f5f5f5;
+  margin: 20px 0; }
+  #main .container .main-time {
+    margin-bottom: 22px;
+    position: relative; }
+    #main .container .main-time .time-title {
+      position: relative;
+      height: 58px; }
+      #main .container .main-time .time-title .title {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 200;
+        line-height: 58px;
+        color: #333; }
+    #main .container .main-time .time-info .info-time {
+      border-top-color: #e53935;
+      height: 300px;
+      padding-top: 39px;
+      border-top-width: 1px;
+      border-top-style: solid;
+      background: #f1eded;
+      text-align: center;
+      width: 234px;
+      float: left; }
+      #main .container .main-time .time-info .info-time .time-round {
+        font-size: 21px;
+        color: #ef3a3b;
+        padding-top: 15px; }
+      #main .container .main-time .time-info .info-time img {
+        margin: 25px auto; }
+      #main .container .main-time .time-info .info-time .time-desc {
+        color: rgba(0, 0, 0, 0.54);
+        font-size: 15px; }
+    #main .container .main-time .time-info .info-goods {
+      width: 978px;
+      margin-left: 14px;
+      float: left;
+      text-align: center; }
+      #main .container .main-time .time-info .info-goods .swiper-wrapper {
+        overflow: hidden; }
+        #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 {
+          width: 234px;
+          margin-right: 10px;
+          background: #fafafa;
+          float: left; }
+          #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a {
+            display: block;
+            height: 300px;
+            padding-top: 39px;
+            position: relative; }
+            #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-img {
+              display: block;
+              width: 160px;
+              margin: 0 auto 22px; }
+              #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-img img {
+                width: 160px;
+                height: 160px; }
+            #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-title {
+              margin: 0 20px 3px;
+              font-size: 14px;
+              font-weight: 400;
+              text-overflow: ellipsis;
+              color: #212121;
+              overflow: hidden;
+              white-space: nowrap; }
+            #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-desc {
+              height: 18px;
+              margin: 0 20px 12px;
+              font-size: 12px;
+              text-overflow: ellipsis;
+              color: #b0b0b0;
+              overflow: hidden;
+              white-space: nowrap; }
+            #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-price {
+              margin: 0;
+              color: #ff6700; }
+              #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-price span {
+                color: #ff6700; }
+              #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-price del {
+                color: #b0b0b0; }
+      #main .container .main-time .time-info .info-goods .swiper-button-next, #main .container .main-time .time-info .info-goods .swiper-button-prev {
+        top: 50px;
+        left: 1160px;
+        width: 0px;
+        height: 0px; }
+        #main .container .main-time .time-info .info-goods .swiper-button-next img, #main .container .main-time .time-info .info-goods .swiper-button-prev img {
+          width: 12px;
+          height: 12px; }
+      #main .container .main-time .time-info .info-goods .swiper-button-next {
+        left: 1180px; }
+  #main .container .mian-img1 {
+    height: 120px;
+    margin: 22px 0;
+    overflow: hidden; }
+  #main .container .main-site1 {
+    margin-bottom: 8px; }
+    #main .container .main-site1 .site1-title {
+      position: relative;
+      height: 58px; }
+      #main .container .main-site1 .site1-title h2 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 200;
+        line-height: 58px;
+        color: #333; }
+    #main .container .main-site1 .site1-info .info-left {
+      width: 234px; }
+      #main .container .main-site1 .site1-info .info-left ul {
+        margin: 0 0 -14px -14px; }
+        #main .container .main-site1 .site1-info .info-left ul li {
+          height: 614px; }
+          #main .container .main-site1 .site1-info .info-left ul li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+            #main .container .main-site1 .site1-info .info-left ul li a img {
+              width: 100%;
+              height: 100%; }
+    #main .container .main-site1 .site1-info .info-right {
+      width: 978px; }
+  #main .container .mian-img2 {
+    height: 120px;
+    margin: 22px 0;
+    overflow: hidden; }
+  #main .container .mian-img3 {
+    height: 120px;
+    margin: 22px 0;
+    overflow: hidden; }

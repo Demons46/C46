@@ -1,0 +1,58 @@
+[
+    {
+        "code": "i1",
+        "urlimg": "./img/t1-j.webp",
+        "title": "小米10 至尊版",
+        "desc": "120X变焦/120W秒充/120Hz屏幕",
+        "price": "5299元起"
+    },
+    {
+        "code": "i2",
+        "urlimg": "./img/t2-j.webp",
+        "title": "Redmi K30S至尊纪念版",
+        "desc": "144Hz[7档]变速高刷屏",
+        "price": "2599元起"
+    },
+    {
+        "code": "i3",
+        "urlimg": "./img/t3-j.webp",
+        "title": "Redmi K30至尊版",
+        "desc": "144Hz[7档]变速高刷屏",
+        "price": "1999元起"
+    },
+    {
+        "code": "i4",
+        "urlimg": "./img/t4-j.webp",
+        "title": "腾讯黑鲨3S",
+        "desc": "骁龙865处理器，120Hz刷新率",
+        "price": "3999元起"
+    },
+    {
+        "code": "i5",
+        "urlimg": "./img/t5-j.webp",
+        "title": "Redmi 9A",
+        "desc": "5000mAh长循环大电量",
+        "price": "599元起"
+    },
+    {
+        "code": "i6",
+        "urlimg": "./img/t6-j.webp",
+        "title": "小米10青春版5G",
+        "desc": "50倍潜望式变焦/轻薄5G手机",
+        "price": "1999元起"
+    },
+    {
+        "code": "i7",
+        "urlimg": "./img/t7-j.webp",
+        "title": "小米10",
+        "desc": "骁龙865/1亿像素相机",
+        "price": "2599元起"
+    },
+    {
+        "code": "i8",
+        "urlimg": "./img/t8-j.webp",
+        "title": "Redmi K30 Pro",
+        "desc": "双模5G，骁龙865，弹出全面屏",
+        "price": "3199元起"
+    }
+]
