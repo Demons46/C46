@@ -1,5 +1,249 @@
-$width:400px;
-h2{
-  color: blue;
-  width: $width;
+// 版心
+.container{
+  width: 1226px;
+  margin: 0 auto;
+}
+$m: #ff6700;
+html,body{
+  height: 100%;
+  width: 100%;
+  // 项目开始
+  #app{
+    // 头部部分
+    #header{
+      // 头部-顶部栏
+      .site-header{
+        .container{
+          // 顶部栏-导航栏
+          .header-nav{
+            .nav-list{
+              .nav-category{
+                // 顶部栏-二级菜单
+                .site-category{
+                  display: none;
+                  top: 85px;
+                  border: 1px solid $m;
+                  .site-category-list{
+                    background: #fff;
+                    .category-item{
+                      .category-link{
+                        color: black;
+                      }
+                    }
+                  }
+                }
+                &:hover .site-category{
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // 菜单部分
+    #menu{
+      // 菜单-轮播图
+      .menu-banner{
+        overflow: hidden;
+        position: relative;
+        height: 620px;
+        .swiper-container{          
+          height: 620px;
+          width: 2560px;
+          position: relative;
+          left: 50%;
+          margin-left: -1280px;
+          .swiper-wrapper{
+            margin: 0 auto;
+            width: 2560px;
+            height: 620px;
+            position: relative;
+            .swiper-slide{
+              a{
+                img{
+                  height: 620px;
+                  padding-bottom: 2560px;
+                  position: relative;
+                  left: 50%;
+                  margin-left: -1280px;
+                }
+              }
+            }
+          }
+          .swiper-button-prev,.swiper-button-next{
+            position: absolute;
+            top: 50%;           
+            right: 50%;
+            margin-right: -613px;
+            z-index: 10;
+            cursor: pointer;
+          }
+          .swiper-button-prev{
+            left: 50%;
+            margin-left: -613px;
+          }
+        }
+      }
+    } 
+    // 主体部分
+    #main{
+      background: #f5f5f5;
+      padding-bottom: 60px;
+      .container{
+        // 主体-新品区
+        .main-new{
+          .new-title{
+            h2{
+              line-height: 64px;
+              margin: 0;
+              padding-top: 4px;
+              color: #333;
+              font-size: 24px;
+              font-weight: 400;
+            }
+          }
+          .new-goods{
+            .goods-list{
+              width: 1232px;
+              .goods-item{
+                position: relative;
+                float: left;
+                margin: 0 10px 20px 0;
+                transition: all .4s linear;
+                // 新品区-图片
+                &:hover{
+                  box-shadow: 0px 0px 25px  rgba(46,46,46,0.2);
+                  transform: translateY(-4px);
+                }
+                .goods-img{
+                  .goods-link{
+                    img{
+                      width: 606px;
+                    }
+                  }
+                }
+                // 新品区-描述
+                .goods-desc{
+                  background: #fff;
+                  padding-bottom: 30px;
+                  h3{
+                    font-weight: 400;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    line-height: 26px;
+                    padding: 38px 0 0 48px;
+                    box-sizing: border-box;
+                    a{
+                      font-size: 24px;
+                      color: #333;
+                    }
+                  }
+                  em{
+                    line-height: 18px;
+                    margin: 3px 0 0 48px;
+                    color: rgba(51,51,51,.7);
+                    font-size: 14px;
+                  }
+                  .goods-price{
+                    position: absolute;
+                    bottom: 25px;
+                    right: 30px;
+                    line-height: 30px;
+                    color: $m;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-left: 270px;
+                    strong{
+                      font-weight: 400;
+                      font-size: 30px;
+                    }
+                    del{
+                      color: rgba(51,51,51,.6);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        // 主体-爆品区
+        .main-explode{
+          .explode-title{
+            h2{
+              line-height: 64px;
+              margin: 0;
+              padding-top: 4px;
+              color: #333;
+              font-size: 24px;
+              font-weight: 400;
+            }
+          }
+          .explode-goods{
+            .goods-list2{
+              width: 1232px;
+              .goods-item2{
+                position: relative;
+                float: left;
+                margin: 0 10px 20px 0;
+                transition: all .4s linear;
+                // 爆品区-图片
+                &:hover{
+                  box-shadow: 0px 0px 25px  rgba(46,46,46,0.2);
+                  transform: translateY(-4px);
+                }
+                .goods-img2{
+                  .goods-link2{
+                    img{
+                      width: 606px;
+                    }
+                  }
+                }
+                // 爆品区-描述
+                .goods-desc2{
+                  background: #fff;
+                  padding-bottom: 30px;
+                  h3{
+                    font-weight: 400;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    line-height: 26px;
+                    padding: 38px 0 0 48px;
+                    box-sizing: border-box;
+                    a{
+                      font-size: 24px;
+                      color: #333;
+                    }
+                  }
+                  em{
+                    line-height: 18px;
+                    margin: 3px 0 0 48px;
+                    color: rgba(51,51,51,.7);
+                    font-size: 14px;
+                  }
+                  .goods-price2{
+                    position: absolute;
+                    bottom: 25px;
+                    right: -30px;
+                    line-height: 30px;
+                    color: $m;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-right: 70px;
+                    strong{
+                      font-weight: 400;
+                      font-size: 30px;
+                    }
+                    del{
+                      color: rgba(51,51,51,.6);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

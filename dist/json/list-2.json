@@ -1,0 +1,91 @@
+[
+    {
+        "code": "e1",
+        "imgurl": "./img/explode1.jpg",
+        "title": "变频|米家互联网空调1.5匹",
+        "desc": "变频，快速制冷热",
+        "raw": "1799",
+        "now": "2299元"
+    }
+    ,
+    {
+        "code": "e2",
+        "imgurl": "./img/explode2.jpg",
+        "title": "米家互联网洗烘一体机10kg",
+        "desc": "烘干除菌率达99.9%",
+        "raw": "2099",
+        "now": "2299元"
+    }
+    ,
+    {
+        "code": "e3",
+        "imgurl": "./img/explode3.jpg",
+        "title": "米家扫地机器人",
+        "desc": "智商高，扫得干净扫得快",
+        "raw": "1399",
+        "now": "1699元"
+    }
+    ,
+    {
+        "code": "e4",
+        "imgurl": "./img/explode4.jpg",
+        "title": "小米净水器（厨下式)",
+        "desc": "400加仑大流量，隐藏安装",
+        "raw": "1099",
+        "now": "1999元"
+    }
+    ,
+    {
+        "code": "e5",
+        "imgurl": "./img/explode5.jpg",
+        "title": "米家空气净化器Pro",
+        "desc": "大空间，快循环",
+        "raw": "1399",
+        "now": "1699元"
+    }
+    ,
+    {
+        "code": "e6",
+        "imgurl": "./img/explode6.jpg",
+        "title": "定频|米家空调大1匹",
+        "desc": "出众静音，快速制冷热",
+        "raw": "1499",
+        "now": "1799元"
+    }
+    ,
+    {
+        "code": "e7",
+        "imgurl": "./img/explode7.jpg",
+        "title": "小米净水器1A(厨下式)",
+        "desc": "小身材节省空间，大流量直出纯净水",
+        "raw": "999",
+        "now": "1499元"
+    }
+    ,
+    {
+        "code": "e8",
+        "imgurl": "./img/explode8.jpg",
+        "title": "米家空气净化器2S",
+        "desc": "好空气看得见",
+        "raw": "699",
+        "now": "899元"
+    }
+    ,
+    {
+        "code": "e9",
+        "imgurl": "./img/explode9.jpg",
+        "title": "九号平衡车",
+        "desc": "年轻人的酷玩具",
+        "raw": "1999",
+        "now": ""
+    }
+    ,
+    {
+        "code": "e0",
+        "imgurl": "./img/explode0.jpg",
+        "title": "米家水离子吹风机",
+        "desc": "快速吹干，深度补水",
+        "raw": "199",
+        "now": ""
+    }
+]

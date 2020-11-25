@@ -1,2 +1,15 @@
-h3 {
-  color: red; }
+.container {
+  width: 1226px;
+  margin: 0 auto; }
+
+html #app #header .site-header .container .header-nav .nav-list .nav-category .site-category, body #app #header .site-header .container .header-nav .nav-list .nav-category .site-category {
+  display: none;
+  top: 85px;
+  border: 1px solid #ff6700; }
+  html #app #header .site-header .container .header-nav .nav-list .nav-category .site-category .site-category-list, body #app #header .site-header .container .header-nav .nav-list .nav-category .site-category .site-category-list {
+    background: #fff; }
+    html #app #header .site-header .container .header-nav .nav-list .nav-category .site-category .site-category-list .category-item .category-link, body #app #header .site-header .container .header-nav .nav-list .nav-category .site-category .site-category-list .category-item .category-link {
+      color: black; }
+
+html #app #header .site-header .container .header-nav .nav-list .nav-category:hover .site-category, body #app #header .site-header .container .header-nav .nav-list .nav-category:hover .site-category {
+  display: block; }

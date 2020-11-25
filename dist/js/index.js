@@ -24,7 +24,8 @@ $(function () {
         crossFade: true
       }
     });
-  })();
+  })(); // 计时器轮播图
+
 
   (function () {
     var mySwiper = new Swiper('.swiper-container-2', {
@@ -41,18 +42,19 @@ $(function () {
         crossFade: true
       }
     });
-  })();
-  /* // 回顶部设置
-  $(document).click(function(){
-      var t = $(document).scrollTop();
-      alert(t)
-  })
-  $(document).scrollTop(function(){
-      console.log(111)
-      var t = parseInt($(document).scrollTop());
-      if(t > 300){
-          $('.side-totop').css('display','black');
-      }
-  }) */
+  })(); // 主体数据ajax请求
 
+
+  $.ajax({
+    url: './json/index-2.json',
+    type: 'get',
+    dataType: 'json',
+    success: function success(json) {
+      var goodsStr = '';
+      $.each(json, function (index, item) {
+        goodsStr += "\n                <li class=\"r-list-items\">\n                  <a href=\"#\" class=\"r-list-links\">\n                    <div class=\"con-img\">\n                      <img src=\"".concat(item.urlimg, "\" alt=\"\">\n                    </div>\n                    <h3 class=\"con-title\">").concat(item.title, "</h3>\n                    <p class=\"con-desc\">").concat(item.desc, "</p>\n                    <p class=\"con-price\">").concat(item.price, "</p>\n                  </a>\n                </li>\n                ");
+      });
+      $('.right-lists').html(goodsStr);
+    }
+  });
 });

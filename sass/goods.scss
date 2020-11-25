@@ -1,3 +1,42 @@
-h3{
-  color: red;
+// 版心
+.container{
+  width: 1226px;
+  margin: 0 auto;
+}
+$m: #ff6700;
+html,body{
+  #app{
+     // 头部部分
+     #header{
+      // 头部-顶部栏
+      .site-header{
+        .container{
+          // 顶部栏-导航栏
+          .header-nav{
+            .nav-list{
+              .nav-category{
+                // 顶部栏-二级菜单
+                .site-category{
+                  display: none;
+                  top: 85px;
+                  border: 1px solid $m;
+                  .site-category-list{
+                    background: #fff;
+                    .category-item{
+                      .category-link{
+                        color: black;
+                      }
+                    }
+                  }
+                }
+                &:hover .site-category{
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

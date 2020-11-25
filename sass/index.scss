@@ -138,6 +138,7 @@ $m: #ff6700;
           color: #333;
         }
       }
+      // 倒计时
       .time-info{
         .info-time{
           border-top-color: #e53935;
@@ -162,6 +163,7 @@ $m: #ff6700;
             font-size: 15px;
           }
         }
+        // 商品轮播
         .info-goods{
           width: 978px;
           margin-left: 14px;
@@ -247,7 +249,7 @@ $m: #ff6700;
     }
     // 主体-模块一
     .main-site1{
-      margin-bottom: 8px;
+      margin: 8px 0;
       .site1-title{
         position: relative;
         height: 58px;
@@ -258,14 +260,31 @@ $m: #ff6700;
           line-height: 58px;
           color: #333;
         }
+        div{
+          position: absolute;
+          right: 0;
+          top: 0;
+          a{
+            font-size: 16px;
+            line-height: 58px;
+            color: #424242;
+            &:hover{
+              color: $m;
+            }
+          }
+        }
       }
       .site1-info{
         .info-left{
           width: 234px;
+          float: left;
           ul{
-            margin: 0 0 -14px -14px;
             li{
               height: 614px;
+              transition: all .3s linear;
+              &:hover{
+                transform: translateY(-4px);
+              }
               a{
                 display: block;
                 width: 100%;
@@ -280,6 +299,52 @@ $m: #ff6700;
         }
         .info-right{
           width: 978px;
+          float: left;
+          text-align: center;
+          margin-left: 14px;
+          .right-lists{
+            margin: 0 0 -14px 0;
+            .r-list-items{
+              height: 260px;
+              padding: 20px 0;
+              position: relative;
+              z-index: 1;
+              float: left;
+              width: 234px;
+              margin-left: 10px;
+              margin-bottom: 14px;
+              background: #fff;
+              transition: all .3s linear;
+              &:hover{
+                box-shadow: 0px 0px 25px  rgba(46,46,46,0.2);
+                transform: translateY(-1px);
+              }
+              .r-list-links{
+                .con-img{
+                  display: block;
+                  width: 160px;
+                  margin: 0 auto 22px;
+                  img{
+                    width: 160px;
+                    height: 160px;
+                  }
+                }
+                .con-title{
+                  margin: 0 10px 2px;
+                  color: #000;
+                }
+                .con-desc{
+                  margin: 0 10px 10px;
+                  height: 18px;
+                  font-size: 12px;
+                  color: #b0b0b0;
+                }
+                .con-price{
+                  color: #ff6700;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -290,9 +355,9 @@ $m: #ff6700;
       overflow: hidden;
     }
     // 主体-模块二
-    .main-site2{
+    /* .main-site2{
 
-    }
+    } */
     // 主体banner2
     .mian-img3{
       height: 120px;

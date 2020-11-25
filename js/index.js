@@ -23,6 +23,7 @@ $(function(){
             }
         });        
     })();
+    // 计时器轮播图
     (function(){
         var mySwiper = new Swiper ('.swiper-container-2', {
             loop: true, // 循环模式选项            
@@ -38,18 +39,30 @@ $(function(){
             }
         });        
     })();
-    /* // 回顶部设置
-    $(document).click(function(){
-        var t = $(document).scrollTop();
-        alert(t)
-    })
-    $(document).scrollTop(function(){
-        console.log(111)
-        var t = parseInt($(document).scrollTop());
-        if(t > 300){
-            $('.side-totop').css('display','black');
+    // 主体数据ajax请求
+    $.ajax({
+        url: './json/index-2.json',
+        type: 'get',
+        dataType: 'json',
+        success: function(json){
+            var goodsStr = '';
+            $.each(json,function(index,item){
+                goodsStr +=
+                `
+                <li class="r-list-items">
+                  <a href="#" class="r-list-links">
+                    <div class="con-img">
+                      <img src="${item.urlimg}" alt="">
+                    </div>
+                    <h3 class="con-title">${item.title}</h3>
+                    <p class="con-desc">${item.desc}</p>
+                    <p class="con-price">${item.price}</p>
+                  </a>
+                </li>
+                `
+            })
+            $('.right-lists').html(goodsStr);
         }
-    }) */
-       
+    })
     
 });

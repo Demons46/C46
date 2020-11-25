@@ -320,7 +320,7 @@ body {
     background: url(../img/slogan-xm.png) no-repeat center 0; }
   body #side {
     position: fixed;
-    bottom: 120px;
+    top: 150px;
     right: 0;
     z-index: 99; }
     body #side .side-totop, body #side .side-item {

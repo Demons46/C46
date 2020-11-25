@@ -1,3 +1,153 @@
-h2 {
-  color: blue;
-  width: 400px; }
+.container {
+  width: 1226px;
+  margin: 0 auto; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+  html #app #header .site-header .container .header-nav .nav-list .nav-category .site-category, body #app #header .site-header .container .header-nav .nav-list .nav-category .site-category {
+    display: none;
+    top: 85px;
+    border: 1px solid #ff6700; }
+    html #app #header .site-header .container .header-nav .nav-list .nav-category .site-category .site-category-list, body #app #header .site-header .container .header-nav .nav-list .nav-category .site-category .site-category-list {
+      background: #fff; }
+      html #app #header .site-header .container .header-nav .nav-list .nav-category .site-category .site-category-list .category-item .category-link, body #app #header .site-header .container .header-nav .nav-list .nav-category .site-category .site-category-list .category-item .category-link {
+        color: black; }
+  html #app #header .site-header .container .header-nav .nav-list .nav-category:hover .site-category, body #app #header .site-header .container .header-nav .nav-list .nav-category:hover .site-category {
+    display: block; }
+  html #app #menu .menu-banner, body #app #menu .menu-banner {
+    overflow: hidden;
+    position: relative;
+    height: 620px; }
+    html #app #menu .menu-banner .swiper-container, body #app #menu .menu-banner .swiper-container {
+      height: 620px;
+      width: 2560px;
+      position: relative;
+      left: 50%;
+      margin-left: -1280px; }
+      html #app #menu .menu-banner .swiper-container .swiper-wrapper, body #app #menu .menu-banner .swiper-container .swiper-wrapper {
+        margin: 0 auto;
+        width: 2560px;
+        height: 620px;
+        position: relative; }
+        html #app #menu .menu-banner .swiper-container .swiper-wrapper .swiper-slide a img, body #app #menu .menu-banner .swiper-container .swiper-wrapper .swiper-slide a img {
+          height: 620px;
+          padding-bottom: 2560px;
+          position: relative;
+          left: 50%;
+          margin-left: -1280px; }
+      html #app #menu .menu-banner .swiper-container .swiper-button-prev, html #app #menu .menu-banner .swiper-container .swiper-button-next, body #app #menu .menu-banner .swiper-container .swiper-button-prev, body #app #menu .menu-banner .swiper-container .swiper-button-next {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        margin-right: -613px;
+        z-index: 10;
+        cursor: pointer; }
+      html #app #menu .menu-banner .swiper-container .swiper-button-prev, body #app #menu .menu-banner .swiper-container .swiper-button-prev {
+        left: 50%;
+        margin-left: -613px; }
+  html #app #main, body #app #main {
+    background: #f5f5f5;
+    padding-bottom: 60px; }
+    html #app #main .container .main-new .new-title h2, body #app #main .container .main-new .new-title h2 {
+      line-height: 64px;
+      margin: 0;
+      padding-top: 4px;
+      color: #333;
+      font-size: 24px;
+      font-weight: 400; }
+    html #app #main .container .main-new .new-goods .goods-list, body #app #main .container .main-new .new-goods .goods-list {
+      width: 1232px; }
+      html #app #main .container .main-new .new-goods .goods-list .goods-item, body #app #main .container .main-new .new-goods .goods-list .goods-item {
+        position: relative;
+        float: left;
+        margin: 0 10px 20px 0;
+        transition: all .4s linear; }
+        html #app #main .container .main-new .new-goods .goods-list .goods-item:hover, body #app #main .container .main-new .new-goods .goods-list .goods-item:hover {
+          box-shadow: 0px 0px 25px rgba(46, 46, 46, 0.2);
+          transform: translateY(-4px); }
+        html #app #main .container .main-new .new-goods .goods-list .goods-item .goods-img .goods-link img, body #app #main .container .main-new .new-goods .goods-list .goods-item .goods-img .goods-link img {
+          width: 606px; }
+        html #app #main .container .main-new .new-goods .goods-list .goods-item .goods-desc, body #app #main .container .main-new .new-goods .goods-list .goods-item .goods-desc {
+          background: #fff;
+          padding-bottom: 30px; }
+          html #app #main .container .main-new .new-goods .goods-list .goods-item .goods-desc h3, body #app #main .container .main-new .new-goods .goods-list .goods-item .goods-desc h3 {
+            font-weight: 400;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 26px;
+            padding: 38px 0 0 48px;
+            box-sizing: border-box; }
+            html #app #main .container .main-new .new-goods .goods-list .goods-item .goods-desc h3 a, body #app #main .container .main-new .new-goods .goods-list .goods-item .goods-desc h3 a {
+              font-size: 24px;
+              color: #333; }
+          html #app #main .container .main-new .new-goods .goods-list .goods-item .goods-desc em, body #app #main .container .main-new .new-goods .goods-list .goods-item .goods-desc em {
+            line-height: 18px;
+            margin: 3px 0 0 48px;
+            color: rgba(51, 51, 51, 0.7);
+            font-size: 14px; }
+          html #app #main .container .main-new .new-goods .goods-list .goods-item .goods-desc .goods-price, body #app #main .container .main-new .new-goods .goods-list .goods-item .goods-desc .goods-price {
+            position: absolute;
+            bottom: 25px;
+            right: 30px;
+            line-height: 30px;
+            color: #ff6700;
+            font-size: 12px;
+            font-weight: 700;
+            margin-left: 270px; }
+            html #app #main .container .main-new .new-goods .goods-list .goods-item .goods-desc .goods-price strong, body #app #main .container .main-new .new-goods .goods-list .goods-item .goods-desc .goods-price strong {
+              font-weight: 400;
+              font-size: 30px; }
+            html #app #main .container .main-new .new-goods .goods-list .goods-item .goods-desc .goods-price del, body #app #main .container .main-new .new-goods .goods-list .goods-item .goods-desc .goods-price del {
+              color: rgba(51, 51, 51, 0.6); }
+    html #app #main .container .main-explode .explode-title h2, body #app #main .container .main-explode .explode-title h2 {
+      line-height: 64px;
+      margin: 0;
+      padding-top: 4px;
+      color: #333;
+      font-size: 24px;
+      font-weight: 400; }
+    html #app #main .container .main-explode .explode-goods .goods-list2, body #app #main .container .main-explode .explode-goods .goods-list2 {
+      width: 1232px; }
+      html #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2, body #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 {
+        position: relative;
+        float: left;
+        margin: 0 10px 20px 0;
+        transition: all .4s linear; }
+        html #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2:hover, body #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2:hover {
+          box-shadow: 0px 0px 25px rgba(46, 46, 46, 0.2);
+          transform: translateY(-4px); }
+        html #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 .goods-img2 .goods-link2 img, body #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 .goods-img2 .goods-link2 img {
+          width: 606px; }
+        html #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 .goods-desc2, body #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 .goods-desc2 {
+          background: #fff;
+          padding-bottom: 30px; }
+          html #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 .goods-desc2 h3, body #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 .goods-desc2 h3 {
+            font-weight: 400;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 26px;
+            padding: 38px 0 0 48px;
+            box-sizing: border-box; }
+            html #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 .goods-desc2 h3 a, body #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 .goods-desc2 h3 a {
+              font-size: 24px;
+              color: #333; }
+          html #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 .goods-desc2 em, body #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 .goods-desc2 em {
+            line-height: 18px;
+            margin: 3px 0 0 48px;
+            color: rgba(51, 51, 51, 0.7);
+            font-size: 14px; }
+          html #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 .goods-desc2 .goods-price2, body #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 .goods-desc2 .goods-price2 {
+            position: absolute;
+            bottom: 25px;
+            right: -30px;
+            line-height: 30px;
+            color: #ff6700;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 70px; }
+            html #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 .goods-desc2 .goods-price2 strong, body #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 .goods-desc2 .goods-price2 strong {
+              font-weight: 400;
+              font-size: 30px; }
+            html #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 .goods-desc2 .goods-price2 del, body #app #main .container .main-explode .explode-goods .goods-list2 .goods-item2 .goods-desc2 .goods-price2 del {
+              color: rgba(51, 51, 51, 0.6); }

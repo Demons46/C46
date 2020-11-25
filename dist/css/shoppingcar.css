@@ -1,0 +1,48 @@
+.container {
+  width: 1226px;
+  margin: 0 auto; }
+
+html #app #header, body #app #header {
+  font-size: 12px;
+  border-bottom: 2px solid #ff6700;
+  background: #fff;
+  color: #b0b0b0;
+  position: relative;
+  z-index: 20;
+  height: 100px; }
+  html #app #header .container .car-logo, body #app #header .container .car-logo {
+    width: 93px;
+    margin-top: 26px;
+    float: left; }
+    html #app #header .container .car-logo .car-link, body #app #header .container .car-logo .car-link {
+      position: relative;
+      display: block;
+      width: 48px;
+      height: 48px;
+      overflow: hidden;
+      background-color: #ff6700;
+      /* img{
+
+                     } */ }
+  html #app #header .container .car-title, body #app #header .container .car-title {
+    float: left;
+    margin-top: 26px; }
+    html #app #header .container .car-title h2, body #app #header .container .car-title h2 {
+      float: left;
+      line-height: 48px;
+      margin-bottom: 0;
+      font-size: 28px;
+      color: #000; }
+  html #app #header .container .car-info, body #app #header .container .car-info {
+    margin-top: 30px;
+    position: relative;
+    float: right;
+    height: 40px;
+    line-height: 40px; }
+    html #app #header .container .car-info .user, body #app #header .container .car-info .user {
+      float: left;
+      font-size: 14px;
+      margin-right: 10px;
+      color: #000; }
+    html #app #header .container .car-info a, body #app #header .container .car-info a {
+      color: #000; }

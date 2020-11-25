@@ -88,115 +88,131 @@
   padding-bottom: 12px;
   background: #f5f5f5;
   margin: 20px 0; }
-  #main .container .main-time {
-    margin-bottom: 22px;
-    position: relative; }
-    #main .container .main-time .time-title {
-      position: relative;
-      height: 58px; }
-      #main .container .main-time .time-title .title {
-        margin: 0;
-        font-size: 22px;
-        font-weight: 200;
-        line-height: 58px;
-        color: #333; }
-    #main .container .main-time .time-info .info-time {
-      border-top-color: #e53935;
-      height: 300px;
-      padding-top: 39px;
-      border-top-width: 1px;
-      border-top-style: solid;
-      background: #f1eded;
-      text-align: center;
-      width: 234px;
-      float: left; }
-      #main .container .main-time .time-info .info-time .time-round {
-        font-size: 21px;
-        color: #ef3a3b;
-        padding-top: 15px; }
-      #main .container .main-time .time-info .info-time img {
-        margin: 25px auto; }
-      #main .container .main-time .time-info .info-time .time-desc {
-        color: rgba(0, 0, 0, 0.54);
-        font-size: 15px; }
-    #main .container .main-time .time-info .info-goods {
-      width: 978px;
-      margin-left: 14px;
-      float: left;
-      text-align: center; }
-      #main .container .main-time .time-info .info-goods .swiper-wrapper {
-        overflow: hidden; }
-        #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 {
-          width: 234px;
-          margin-right: 10px;
-          background: #fafafa;
-          float: left; }
-          #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a {
-            display: block;
-            height: 300px;
-            padding-top: 39px;
-            position: relative; }
-            #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-img {
+  #main .container {
+    /* .main-site2{
+
+    } */ }
+    #main .container .main-time {
+      margin-bottom: 22px;
+      position: relative; }
+      #main .container .main-time .time-title {
+        position: relative;
+        height: 58px; }
+        #main .container .main-time .time-title .title {
+          margin: 0;
+          font-size: 22px;
+          font-weight: 200;
+          line-height: 58px;
+          color: #333; }
+      #main .container .main-time .time-info .info-time {
+        border-top-color: #e53935;
+        height: 300px;
+        padding-top: 39px;
+        border-top-width: 1px;
+        border-top-style: solid;
+        background: #f1eded;
+        text-align: center;
+        width: 234px;
+        float: left; }
+        #main .container .main-time .time-info .info-time .time-round {
+          font-size: 21px;
+          color: #ef3a3b;
+          padding-top: 15px; }
+        #main .container .main-time .time-info .info-time img {
+          margin: 25px auto; }
+        #main .container .main-time .time-info .info-time .time-desc {
+          color: rgba(0, 0, 0, 0.54);
+          font-size: 15px; }
+      #main .container .main-time .time-info .info-goods {
+        width: 978px;
+        margin-left: 14px;
+        float: left;
+        text-align: center; }
+        #main .container .main-time .time-info .info-goods .swiper-wrapper {
+          overflow: hidden; }
+          #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 {
+            width: 234px;
+            margin-right: 10px;
+            background: #fafafa;
+            float: left; }
+            #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a {
               display: block;
-              width: 160px;
-              margin: 0 auto 22px; }
-              #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-img img {
+              height: 300px;
+              padding-top: 39px;
+              position: relative; }
+              #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-img {
+                display: block;
                 width: 160px;
-                height: 160px; }
-            #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-title {
-              margin: 0 20px 3px;
-              font-size: 14px;
-              font-weight: 400;
-              text-overflow: ellipsis;
-              color: #212121;
-              overflow: hidden;
-              white-space: nowrap; }
-            #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-desc {
-              height: 18px;
-              margin: 0 20px 12px;
-              font-size: 12px;
-              text-overflow: ellipsis;
-              color: #b0b0b0;
-              overflow: hidden;
-              white-space: nowrap; }
-            #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-price {
-              margin: 0;
-              color: #ff6700; }
-              #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-price span {
+                margin: 0 auto 22px; }
+                #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-img img {
+                  width: 160px;
+                  height: 160px; }
+              #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-title {
+                margin: 0 20px 3px;
+                font-size: 14px;
+                font-weight: 400;
+                text-overflow: ellipsis;
+                color: #212121;
+                overflow: hidden;
+                white-space: nowrap; }
+              #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-desc {
+                height: 18px;
+                margin: 0 20px 12px;
+                font-size: 12px;
+                text-overflow: ellipsis;
+                color: #b0b0b0;
+                overflow: hidden;
+                white-space: nowrap; }
+              #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-price {
+                margin: 0;
                 color: #ff6700; }
-              #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-price del {
-                color: #b0b0b0; }
-      #main .container .main-time .time-info .info-goods .swiper-button-next, #main .container .main-time .time-info .info-goods .swiper-button-prev {
-        top: 50px;
-        left: 1160px;
-        width: 0px;
-        height: 0px; }
-        #main .container .main-time .time-info .info-goods .swiper-button-next img, #main .container .main-time .time-info .info-goods .swiper-button-prev img {
-          width: 12px;
-          height: 12px; }
-      #main .container .main-time .time-info .info-goods .swiper-button-next {
-        left: 1180px; }
-  #main .container .mian-img1 {
-    height: 120px;
-    margin: 22px 0;
-    overflow: hidden; }
-  #main .container .main-site1 {
-    margin-bottom: 8px; }
-    #main .container .main-site1 .site1-title {
-      position: relative;
-      height: 58px; }
-      #main .container .main-site1 .site1-title h2 {
-        margin: 0;
-        font-size: 22px;
-        font-weight: 200;
-        line-height: 58px;
-        color: #333; }
-    #main .container .main-site1 .site1-info .info-left {
-      width: 234px; }
-      #main .container .main-site1 .site1-info .info-left ul {
-        margin: 0 0 -14px -14px; }
+                #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-price span {
+                  color: #ff6700; }
+                #main .container .main-time .time-info .info-goods .swiper-wrapper .swiper-slide .swiper-slide-1 a .content .content-price del {
+                  color: #b0b0b0; }
+        #main .container .main-time .time-info .info-goods .swiper-button-next, #main .container .main-time .time-info .info-goods .swiper-button-prev {
+          top: 50px;
+          left: 1160px;
+          width: 0px;
+          height: 0px; }
+          #main .container .main-time .time-info .info-goods .swiper-button-next img, #main .container .main-time .time-info .info-goods .swiper-button-prev img {
+            width: 12px;
+            height: 12px; }
+        #main .container .main-time .time-info .info-goods .swiper-button-next {
+          left: 1180px; }
+    #main .container .mian-img1 {
+      height: 120px;
+      margin: 22px 0;
+      overflow: hidden; }
+    #main .container .main-site1 {
+      margin: 8px 0; }
+      #main .container .main-site1 .site1-title {
+        position: relative;
+        height: 58px; }
+        #main .container .main-site1 .site1-title h2 {
+          margin: 0;
+          font-size: 22px;
+          font-weight: 200;
+          line-height: 58px;
+          color: #333; }
+        #main .container .main-site1 .site1-title div {
+          position: absolute;
+          right: 0;
+          top: 0; }
+          #main .container .main-site1 .site1-title div a {
+            font-size: 16px;
+            line-height: 58px;
+            color: #424242; }
+            #main .container .main-site1 .site1-title div a:hover {
+              color: #ff6700; }
+      #main .container .main-site1 .site1-info .info-left {
+        width: 234px;
+        float: left; }
         #main .container .main-site1 .site1-info .info-left ul li {
-          height: 614px; }
+          height: 614px;
+          transition: all .3s linear; }
+          #main .container .main-site1 .site1-info .info-left ul li:hover {
+            transform: translateY(-4px); }
           #main .container .main-site1 .site1-info .info-left ul li a {
             display: block;
             width: 100%;
@@ -204,13 +220,49 @@
             #main .container .main-site1 .site1-info .info-left ul li a img {
               width: 100%;
               height: 100%; }
-    #main .container .main-site1 .site1-info .info-right {
-      width: 978px; }
-  #main .container .mian-img2 {
-    height: 120px;
-    margin: 22px 0;
-    overflow: hidden; }
-  #main .container .mian-img3 {
-    height: 120px;
-    margin: 22px 0;
-    overflow: hidden; }
+      #main .container .main-site1 .site1-info .info-right {
+        width: 978px;
+        float: left;
+        text-align: center;
+        margin-left: 14px; }
+        #main .container .main-site1 .site1-info .info-right .right-lists {
+          margin: 0 0 -14px 0; }
+          #main .container .main-site1 .site1-info .info-right .right-lists .r-list-items {
+            height: 260px;
+            padding: 20px 0;
+            position: relative;
+            z-index: 1;
+            float: left;
+            width: 234px;
+            margin-left: 10px;
+            margin-bottom: 14px;
+            background: #fff;
+            transition: all .3s linear; }
+            #main .container .main-site1 .site1-info .info-right .right-lists .r-list-items:hover {
+              box-shadow: 0px 0px 25px rgba(46, 46, 46, 0.2);
+              transform: translateY(-1px); }
+            #main .container .main-site1 .site1-info .info-right .right-lists .r-list-items .r-list-links .con-img {
+              display: block;
+              width: 160px;
+              margin: 0 auto 22px; }
+              #main .container .main-site1 .site1-info .info-right .right-lists .r-list-items .r-list-links .con-img img {
+                width: 160px;
+                height: 160px; }
+            #main .container .main-site1 .site1-info .info-right .right-lists .r-list-items .r-list-links .con-title {
+              margin: 0 10px 2px;
+              color: #000; }
+            #main .container .main-site1 .site1-info .info-right .right-lists .r-list-items .r-list-links .con-desc {
+              margin: 0 10px 10px;
+              height: 18px;
+              font-size: 12px;
+              color: #b0b0b0; }
+            #main .container .main-site1 .site1-info .info-right .right-lists .r-list-items .r-list-links .con-price {
+              color: #ff6700; }
+    #main .container .mian-img2 {
+      height: 120px;
+      margin: 22px 0;
+      overflow: hidden; }
+    #main .container .mian-img3 {
+      height: 120px;
+      margin: 22px 0;
+      overflow: hidden; }
