@@ -1,0 +1,18 @@
+[
+    {
+        "code": "l3",
+        "goodsName": "小米小爱音箱 Play",
+        "goodsDesc": "智能设备控制 / 人工智能语音对话 / 就近唤醒 / 趣味闹钟 / 孩子的超级故事王",
+        "goodsPriceN": "99元",
+        "goodsPriceR": "169元",
+        "goodsTypeT": "选择颜色",
+        "goodsTypeC": "白色",
+        "goodsImg1": "./img/goods2.jpg",
+        "goodsImg2": "./img/goods3.jpg",
+        "goodsImg3": "./img/goods4.jpg",
+        "goodsImg4": "./img/xiaoai1.jpg",
+        "goodsImg5": "./img/xiaoai2.jpg",
+        "goodsImg6": "./img/xiaoai3.jpg",
+        "goodsImg7": "./img/xiaoai4.jpg"
+    }
+]

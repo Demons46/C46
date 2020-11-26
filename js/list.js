@@ -4,11 +4,11 @@ $(function(){
     var mySwiper = new Swiper ('.swiper-container', {
       // 循环模式选项
       loop: true, 
-      // 如果需要分页器
+      // 分页器
       pagination: {
         el: '.swiper-pagination',
       },
-      // 如果需要前进后退按钮
+      // 前进后退按钮
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -25,9 +25,9 @@ $(function(){
       $.each(json,function(index,item){
         goodsStr += 
         `
-        <li class="goods-item">
+        <li code="${item.code}" class="goods-item">
           <div class="goods-img">
-            <a href="#" class="goods-link">
+            <a href="goods.html" class="goods-link">
               <img src="${item.imgurl}" alt="">
             </a>
           </div>
@@ -58,7 +58,7 @@ $(function(){
       $.each(json,function(index,item){
         goodsStr += 
         `
-        <li class="goods-item2">
+        <li code="${item.code}" class="goods-item2">
           <div class="goods-img2">
             <a href="#" class="goods-link2">
               <img src="${item.imgurl}" alt="">
@@ -80,5 +80,14 @@ $(function(){
       })
       $('.goods-list2').html(goodsStr);
     }
+  })
+  // 点击不同商品跳转到相应的页面
+  $('.goods-list').on('click','.goods-item',function(){
+    // 获取id
+    var code = $(this).attr('code');
+    var codeObj = {code: code};
+    var codeStr = JSON.stringify(codeObj);
+    // 将id存储到本地存储
+    localStorage.setItem("ID",codeStr);
   })
 })

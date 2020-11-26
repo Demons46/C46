@@ -1,0 +1,16 @@
+[
+    {
+        "code": "l3",
+        "goodsName": "小米小爱音箱 Play",
+        "goodsPriceN": "99元",
+        "goodsImg1": "./img/json1.jpg"        
+    }
+    ,
+    {
+        "code": "l4",
+        "goodsName": "小米智能门锁 推拉式",
+        "goodsPriceN": "1599元",
+        "goodsImg1": "./img/json2.jpg"
+        
+    }
+]

@@ -46,3 +46,242 @@ html #app #header, body #app #header {
       color: #000; }
     html #app #header .container .car-info a, body #app #header .container .car-info a {
       color: #000; }
+
+html #app #main, body #app #main {
+  background: #f5f5f5; }
+  html #app #main .container .car, body #app #main .container .car {
+    border-top: 1px solid #f5f5f5; }
+    html #app #main .container .car .car-list, body #app #main .container .car .car-list {
+      margin-top: 60px;
+      margin-bottom: 1px; }
+      html #app #main .container .car .car-list .car-title, body #app #main .container .car .car-list .car-title {
+        background: #fff; }
+        html #app #main .container .car .car-list .car-title div, body #app #main .container .car .car-list .car-title div {
+          float: left;
+          line-height: 70px;
+          font-size: 14px;
+          text-align: center; }
+        html #app #main .container .car .car-list .car-title .car-check, body #app #main .container .car .car-list .car-title .car-check {
+          position: relative;
+          width: 110px; }
+          html #app #main .container .car .car-list .car-title .car-check input, body #app #main .container .car .car-list .car-title .car-check input {
+            width: 15px;
+            height: 15px;
+            float: left;
+            position: absolute;
+            top: 40%;
+            left: 20px; }
+        html #app #main .container .car .car-list .car-title .car-name, body #app #main .container .car .car-list .car-title .car-name {
+          width: 380px;
+          margin-left: 120px;
+          text-align: left; }
+        html #app #main .container .car .car-list .car-title .car-single, body #app #main .container .car .car-list .car-title .car-single {
+          width: 158px; }
+        html #app #main .container .car .car-list .car-title .car-num, body #app #main .container .car .car-list .car-title .car-num {
+          width: 150px;
+          margin-left: 18px; }
+        html #app #main .container .car .car-list .car-title .car-all, body #app #main .container .car .car-list .car-title .car-all {
+          width: 200px; }
+        html #app #main .container .car .car-list .car-title .car-operation, body #app #main .container .car .car-list .car-title .car-operation {
+          width: 70px; }
+      html #app #main .container .car .car-list .car-goods .goods-items, body #app #main .container .car .car-list .car-goods .goods-items {
+        position: relative;
+        padding: 15px 26px 15px 0;
+        line-height: 86px;
+        background: #fff;
+        margin-top: 2px;
+        font-size: 18px; }
+        html #app #main .container .car .car-list .car-goods .goods-items .car-check-g, body #app #main .container .car .car-list .car-goods .goods-items .car-check-g {
+          width: 15px;
+          height: 15px;
+          float: left;
+          position: absolute;
+          top: 40%;
+          left: 20px; }
+        html #app #main .container .car .car-list .car-goods .goods-items div, body #app #main .container .car .car-list .car-goods .goods-items div {
+          float: left; }
+        html #app #main .container .car .car-list .car-goods .goods-items .car-img-g, body #app #main .container .car .car-list .car-goods .goods-items .car-img-g {
+          width: 120px;
+          margin-left: 110px; }
+          html #app #main .container .car .car-list .car-goods .goods-items .car-img-g img, body #app #main .container .car .car-list .car-goods .goods-items .car-img-g img {
+            width: 80px; }
+        html #app #main .container .car .car-list .car-goods .goods-items .car-name-g, body #app #main .container .car .car-list .car-goods .goods-items .car-name-g {
+          font-size: 18px;
+          width: 360px;
+          margin-left: 20px; }
+        html #app #main .container .car .car-list .car-goods .goods-items .car-single-g, body #app #main .container .car .car-list .car-goods .goods-items .car-single-g {
+          width: 158px;
+          text-align: center; }
+        html #app #main .container .car .car-list .car-goods .goods-items .car-num-g, body #app #main .container .car .car-list .car-goods .goods-items .car-num-g {
+          width: 148px;
+          height: 38px;
+          border: 1px solid #e0e0e0;
+          text-align: center;
+          background-color: #fff;
+          position: relative;
+          zoom: 1;
+          margin-top: 20px;
+          margin-left: 20px; }
+          html #app #main .container .car .car-list .car-goods .goods-items .car-num-g .add, html #app #main .container .car .car-list .car-goods .goods-items .car-num-g .minus, body #app #main .container .car .car-list .car-goods .goods-items .car-num-g .add, body #app #main .container .car .car-list .car-goods .goods-items .car-num-g .minus {
+            float: left;
+            width: 38px;
+            height: 38px;
+            line-height: 38px;
+            color: #757575;
+            font-size: 20px;
+            transition: all .3s;
+            text-align: center; }
+            html #app #main .container .car .car-list .car-goods .goods-items .car-num-g .add:hover, html #app #main .container .car .car-list .car-goods .goods-items .car-num-g .minus:hover, body #app #main .container .car .car-list .car-goods .goods-items .car-num-g .add:hover, body #app #main .container .car .car-list .car-goods .goods-items .car-num-g .minus:hover {
+              background: rgba(0, 0, 0, 0.2); }
+          html #app #main .container .car .car-list .car-goods .goods-items .car-num-g input, body #app #main .container .car .car-list .car-goods .goods-items .car-num-g input {
+            float: left;
+            width: 72px;
+            height: 38px;
+            line-height: 38px;
+            padding: 0;
+            border-width: 0;
+            color: #424242;
+            font-size: 16px;
+            text-align: center; }
+        html #app #main .container .car .car-list .car-goods .goods-items .car-all-g, body #app #main .container .car .car-list .car-goods .goods-items .car-all-g {
+          width: 182px;
+          text-align: center; }
+        html #app #main .container .car .car-list .car-goods .goods-items .car-operation-g, body #app #main .container .car .car-list .car-goods .goods-items .car-operation-g {
+          width: 80px;
+          text-align: center;
+          cursor: pointer; }
+      html #app #main .container .car .car-list .car-close, body #app #main .container .car .car-list .car-close {
+        height: 50px;
+        text-align: right;
+        background-color: #fff;
+        position: relative;
+        margin-top: 20px; }
+        html #app #main .container .car .car-list .car-close .close-num, body #app #main .container .car .car-list .car-close .close-num {
+          float: left; }
+          html #app #main .container .car .car-list .car-close .close-num a, body #app #main .container .car .car-list .car-close .close-num a {
+            line-height: 50px;
+            margin-left: 32px;
+            transition: all .4s;
+            font-size: 14px;
+            color: #aaa; }
+            html #app #main .container .car .car-list .car-close .close-num a:hover, body #app #main .container .car .car-list .car-close .close-num a:hover {
+              color: #ff6700; }
+          html #app #main .container .car .car-list .car-close .close-num span, body #app #main .container .car .car-list .car-close .close-num span {
+            margin-left: 16px;
+            padding-left: 16px;
+            border-left: 1px solid #eee;
+            color: #757575; }
+            html #app #main .container .car .car-list .car-close .close-num span i, body #app #main .container .car .car-list .car-close .close-num span i {
+              color: #ff6700; }
+        html #app #main .container .car .car-list .car-close .close-price, body #app #main .container .car .car-list .car-close .close-price {
+          float: right;
+          padding-left: 13px;
+          color: #ff6700; }
+          html #app #main .container .car .car-list .car-close .close-price em, body #app #main .container .car .car-list .car-close .close-price em {
+            font-size: 30px; }
+          html #app #main .container .car .car-list .car-close .close-price a, body #app #main .container .car .car-list .car-close .close-price a {
+            display: inline-block;
+            width: 200px;
+            height: 48px;
+            line-height: 48px;
+            font-size: 18px;
+            margin-left: 50px;
+            vertical-align: top;
+            background: #ff6700;
+            border-color: #ff6700;
+            color: #fff;
+            text-align: center; }
+      html #app #main .container .car .car-list .car-img, body #app #main .container .car .car-list .car-img {
+        float: left;
+        margin-left: 300px; }
+      html #app #main .container .car .car-list .car-txt, body #app #main .container .car .car-list .car-txt {
+        float: left;
+        margin-left: 60px; }
+        html #app #main .container .car .car-list .car-txt p, body #app #main .container .car .car-list .car-txt p {
+          margin: 70px 0 0 0;
+          font-size: 36px;
+          color: #aaa;
+          font-weight: 900; }
+        html #app #main .container .car .car-list .car-txt a, body #app #main .container .car .car-list .car-txt a {
+          display: inline-block;
+          width: 170px;
+          height: 48px;
+          line-height: 48px;
+          background: #ff6700;
+          text-align: center;
+          color: #fff;
+          font-size: 14px;
+          margin-top: 30px; }
+  html #app #main .container .recommend, body #app #main .container .recommend {
+    padding: 60px 0 0; }
+    html #app #main .container .recommend .recommend-title, body #app #main .container .recommend .recommend-title {
+      position: relative;
+      margin: 0;
+      height: 50px;
+      font-size: 30px;
+      font-weight: 400;
+      color: #757575;
+      border-top: 1px solid #e0e0e0; }
+      html #app #main .container .recommend .recommend-title span, body #app #main .container .recommend .recommend-title span {
+        position: absolute;
+        top: -20px;
+        left: 372px;
+        height: 40px;
+        width: 482px;
+        line-height: 40px;
+        text-align: center;
+        display: block;
+        background-color: #f5f5f5; }
+    html #app #main .container .recommend .recommend-goods .recommend-list, body #app #main .container .recommend .recommend-goods .recommend-list {
+      margin: 0 0 0 -14px;
+      padding: 0; }
+      html #app #main .container .recommend .recommend-goods .recommend-list .recommend-item, body #app #main .container .recommend .recommend-goods .recommend-list .recommend-item {
+        float: left;
+        width: 234px;
+        height: 300px;
+        margin: 0 0 14px 14px;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        background-color: #fff;
+        text-align: center; }
+        html #app #main .container .recommend .recommend-goods .recommend-list .recommend-item .recommend-link .recommend-img img, body #app #main .container .recommend .recommend-goods .recommend-list .recommend-item .recommend-link .recommend-img img {
+          display: block;
+          margin: 40px auto 20px;
+          width: 140px;
+          height: 140px; }
+        html #app #main .container .recommend .recommend-goods .recommend-list .recommend-item .recommend-link .recommend-name, body #app #main .container .recommend .recommend-goods .recommend-list .recommend-item .recommend-link .recommend-name {
+          margin: 0 10px 10px;
+          height: 18px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          color: #333; }
+        html #app #main .container .recommend .recommend-goods .recommend-list .recommend-item .recommend-link .recommend-price, body #app #main .container .recommend .recommend-goods .recommend-list .recommend-item .recommend-link .recommend-price {
+          margin-bottom: 10px;
+          color: #ff6700; }
+        html #app #main .container .recommend .recommend-goods .recommend-list .recommend-item .recommend-link .recommend-evaluate, body #app #main .container .recommend .recommend-goods .recommend-list .recommend-item .recommend-link .recommend-evaluate {
+          position: relative;
+          color: #757575; }
+        html #app #main .container .recommend .recommend-goods .recommend-list .recommend-item .recommend-b, body #app #main .container .recommend .recommend-goods .recommend-list .recommend-item .recommend-b {
+          width: 100%;
+          position: absolute;
+          bottom: -50px;
+          transition: all .4s; }
+          html #app #main .container .recommend .recommend-goods .recommend-list .recommend-item .recommend-b a, body #app #main .container .recommend .recommend-goods .recommend-list .recommend-item .recommend-b a {
+            color: #ff6700;
+            display: inline-block;
+            width: 122px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #ff6700;
+            background: #fff;
+            transition: all .3s; }
+            html #app #main .container .recommend .recommend-goods .recommend-list .recommend-item .recommend-b a:hover, body #app #main .container .recommend .recommend-goods .recommend-list .recommend-item .recommend-b a:hover {
+              background: #ff6700;
+              color: #fff; }
+        html #app #main .container .recommend .recommend-goods .recommend-list .recommend-item:hover .recommend-b, body #app #main .container .recommend .recommend-goods .recommend-list .recommend-item:hover .recommend-b {
+          bottom: 20px;
+          z-index: 10; }

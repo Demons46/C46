@@ -13,3 +13,109 @@ html #app #header .site-header .container .header-nav .nav-list .nav-category .s
 
 html #app #header .site-header .container .header-nav .nav-list .nav-category:hover .site-category, body #app #header .site-header .container .header-nav .nav-list .nav-category:hover .site-category {
   display: block; }
+
+html #app #main .container .main-goods, body #app #main .container .main-goods {
+  margin-top: 30px; }
+  html #app #main .container .main-goods .goods-img, body #app #main .container .main-goods .goods-img {
+    float: left; }
+    html #app #main .container .main-goods .goods-img .swiper-container, body #app #main .container .main-goods .goods-img .swiper-container {
+      width: 560px;
+      height: 560px; }
+      html #app #main .container .main-goods .goods-img .swiper-container .swiper-wrapper .swiper-slide img, body #app #main .container .main-goods .goods-img .swiper-container .swiper-wrapper .swiper-slide img {
+        width: 100%; }
+      html #app #main .container .main-goods .goods-img .swiper-container .swiper-button-prev, html #app #main .container .main-goods .goods-img .swiper-container .swiper-button-next, body #app #main .container .main-goods .goods-img .swiper-container .swiper-button-prev, body #app #main .container .main-goods .goods-img .swiper-container .swiper-button-next {
+        top: 50%;
+        right: 10%; }
+      html #app #main .container .main-goods .goods-img .swiper-container .swiper-button-prev, body #app #main .container .main-goods .goods-img .swiper-container .swiper-button-prev {
+        left: 10%; }
+  html #app #main .container .main-goods .goods-desc, body #app #main .container .main-goods .goods-desc {
+    float: left;
+    margin-left: 20px; }
+    html #app #main .container .main-goods .goods-desc h2, body #app #main .container .main-goods .goods-desc h2 {
+      margin: 0;
+      padding: 0;
+      font-size: 24px;
+      font-weight: 400;
+      color: #212121;
+      line-height: 1.8; }
+    html #app #main .container .main-goods .goods-desc p, body #app #main .container .main-goods .goods-desc p {
+      color: #b0b0b0;
+      margin: 0;
+      padding: 0;
+      padding-top: 8px;
+      line-height: 1.8; }
+    html #app #main .container .main-goods .goods-desc .goods-price, body #app #main .container .main-goods .goods-desc .goods-price {
+      display: block;
+      font-size: 18px;
+      line-height: 1.2;
+      color: #ff6700;
+      padding: 12px 0 10px; }
+      html #app #main .container .main-goods .goods-desc .goods-price del, body #app #main .container .main-goods .goods-desc .goods-price del {
+        font-size: 14px;
+        margin-left: 5px;
+        color: #b0b0b0; }
+    html #app #main .container .main-goods .goods-desc .goods-url, body #app #main .container .main-goods .goods-desc .goods-url {
+      margin: 30px 0;
+      width: 600px; }
+      html #app #main .container .main-goods .goods-desc .goods-url .url, body #app #main .container .main-goods .goods-desc .goods-url .url {
+        padding: 30px 50px;
+        position: relative;
+        background: #fafafa;
+        border: 1px solid #e0e0e0; }
+    html #app #main .container .main-goods .goods-desc .goods-type h3, body #app #main .container .main-goods .goods-desc .goods-type h3 {
+      font-size: 18px; }
+    html #app #main .container .main-goods .goods-desc .goods-type p, body #app #main .container .main-goods .goods-desc .goods-type p {
+      width: 292px;
+      height: 42px;
+      color: #ff6700;
+      border: 2px solid #ff6700;
+      text-align: center;
+      line-height: 36px;
+      margin-top: 20px;
+      font-size: 16px; }
+    html #app #main .container .main-goods .goods-desc .goods-all, body #app #main .container .main-goods .goods-desc .goods-all {
+      margin-top: 20px;
+      background: #f9f9fa;
+      padding: 30px;
+      margin-bottom: 30px; }
+      html #app #main .container .main-goods .goods-desc .goods-all .all-t span, body #app #main .container .main-goods .goods-desc .goods-all .all-t span {
+        font-size: 14px; }
+      html #app #main .container .main-goods .goods-desc .goods-all .all-t em, body #app #main .container .main-goods .goods-desc .goods-all .all-t em {
+        float: right;
+        color: #616161; }
+      html #app #main .container .main-goods .goods-desc .goods-all .all-b, body #app #main .container .main-goods .goods-desc .goods-all .all-b {
+        font-size: 24px;
+        padding-top: 20px;
+        color: #ff6700; }
+    html #app #main .container .main-goods .goods-desc .goods-buy, body #app #main .container .main-goods .goods-desc .goods-buy {
+      margin: 10px 0 20px 0; }
+      html #app #main .container .main-goods .goods-desc .goods-buy .buy-add, body #app #main .container .main-goods .goods-desc .goods-buy .buy-add {
+        margin-right: 10px;
+        display: inline-block; }
+        html #app #main .container .main-goods .goods-desc .goods-buy .buy-add a, body #app #main .container .main-goods .goods-desc .goods-buy .buy-add a {
+          display: inline-block;
+          text-align: center;
+          width: 298px;
+          height: 52px;
+          line-height: 52px;
+          font-size: 16px;
+          color: #fff;
+          background-color: #ff6700; }
+      html #app #main .container .main-goods .goods-desc .goods-buy .buy-like, body #app #main .container .main-goods .goods-desc .goods-buy .buy-like {
+        display: inline-block; }
+        html #app #main .container .main-goods .goods-desc .goods-buy .buy-like a, body #app #main .container .main-goods .goods-desc .goods-buy .buy-like a {
+          display: inline-block;
+          text-align: center;
+          width: 140px;
+          height: 52px;
+          line-height: 52px;
+          font-size: 16px;
+          color: #fff;
+          background-color: #b0b0b0; }
+    html #app #main .container .main-goods .goods-desc .goods-safeguard, body #app #main .container .main-goods .goods-desc .goods-safeguard {
+      margin-top: 30px;
+      margin-bottom: 20px; }
+
+html #app #main .main-banner, body #app #main .main-banner {
+  background: #f5f5f5;
+  padding-bottom: 40px; }

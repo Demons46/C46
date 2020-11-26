@@ -5,8 +5,10 @@
   }
   $m: #ff6700;
   html,body{
+      // 项目开始
       #app{
-          #header{
+        // 头部部分
+        #header{
             font-size: 12px;
             border-bottom: 2px solid $m;
             background: #fff;
@@ -57,6 +59,310 @@
                     a{
                         color: #000;
                     }          
+                }
+            }
+        }
+        // 主体部分
+        #main{
+            background: #f5f5f5;
+            .container{
+                // 主体-购物车
+                .car{
+                    border-top: 1px solid #f5f5f5;
+                    .car-list{
+                        margin-top: 60px;
+                        margin-bottom: 1px;
+                        // 有商品时显示
+                        .car-title{
+                            background: #fff;                            
+                            div{
+                                float: left;
+                                line-height: 70px;
+                                font-size: 14px;
+                                text-align: center;
+                            }
+                            .car-check{
+                                position: relative;
+                                width: 110px;                                
+                                input{
+                                    width: 15px;
+                                    height: 15px;
+                                    float: left;
+                                    position: absolute;
+                                    top: 40%;
+                                    left: 20px;
+                                }
+                            }
+                            .car-name{
+                                width: 380px;
+                                margin-left: 120px;
+                                text-align: left;
+                            }
+                            .car-single{
+                                width: 158px;
+                            }
+                            .car-num{
+                                width: 150px;
+                                margin-left: 18px;
+                            }
+                            .car-all{
+                                width: 200px;
+                            }
+                            .car-operation{
+                                width: 70px;
+                            }
+                        }
+                        .car-goods{
+                            .goods-items{
+                                position: relative;
+                                padding: 15px 26px 15px 0;
+                                line-height: 86px;
+                                background: #fff;
+                                margin-top: 2px;
+                                font-size: 18px;
+                                .car-check-g{
+                                    width: 15px;
+                                    height: 15px;
+                                    float: left;
+                                    position: absolute;
+                                    top: 40%;
+                                    left: 20px;
+                                }
+                                div{
+                                    float: left;
+                                }
+                                .car-img-g{
+                                    width: 120px;
+                                    margin-left: 110px;
+                                    img{
+                                        width: 80px;
+                                    }
+                                }
+                                .car-name-g{
+                                    font-size: 18px;
+                                    width: 360px;
+                                    margin-left: 20px;
+                                }
+                                .car-single-g{
+                                    width: 158px;
+                                    text-align: center;
+                                }
+                                .car-num-g{
+                                    width: 148px;
+                                    height: 38px;
+                                    border: 1px solid #e0e0e0;
+                                    text-align: center;
+                                    background-color: #fff;
+                                    position: relative;
+                                    zoom: 1;
+                                    margin-top: 20px;
+                                    margin-left: 20px;
+                                    .add,.minus{
+                                        float: left;
+                                        width: 38px;
+                                        height: 38px;
+                                        line-height: 38px;
+                                        color: #757575;
+                                        font-size: 20px;
+                                        transition: all .3s;
+                                        text-align: center;
+                                        &:hover{
+                                            background: rgba($color: #000000, $alpha: 0.2);
+                                        }
+                                    }                                   
+                                    input{
+                                        float: left;
+                                        width: 72px;
+                                        height: 38px;
+                                        line-height: 38px;
+                                        padding: 0;
+                                        border-width: 0;
+                                        color: #424242;
+                                        font-size: 16px;
+                                        text-align: center;
+                                    }
+                                }
+                                .car-all-g{
+                                    width: 182px;
+                                    text-align: center;
+                                }
+                                .car-operation-g{
+                                    width: 80px;
+                                    text-align: center;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        .car-close{
+                            height: 50px;
+                            text-align: right;
+                            background-color: #fff;
+                            position: relative;
+                            margin-top: 20px;
+                            .close-num{
+                                float: left;
+                                a{
+                                    line-height: 50px;
+                                    margin-left: 32px;
+                                    transition: all .4s;
+                                    font-size: 14px;
+                                    color: #aaa;
+                                    &:hover{
+                                        color: $m;
+                                    }
+                                }
+                                span{
+                                    margin-left: 16px;
+                                    padding-left: 16px;
+                                    border-left: 1px solid #eee;
+                                    color: #757575;
+                                    i{
+                                        color: $m;
+                                    }
+                                }
+                            }
+                            .close-price{
+                                float: right;
+                                padding-left: 13px;
+                                color: $m;
+                                em{
+                                    font-size: 30px;
+                                }
+                                a{
+                                    display: inline-block;
+                                    width: 200px;
+                                    height: 48px;
+                                    line-height: 48px;
+                                    font-size: 18px;
+                                    margin-left: 50px;
+                                    vertical-align: top;
+                                    background: $m;
+                                    border-color: $m;
+                                    color: #fff;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        // 没有商品时显示
+                        .car-img{
+                            float: left;
+                            margin-left: 300px;
+                        }
+                        .car-txt{
+                            float: left;
+                            margin-left: 60px;
+                            p{
+                                margin: 70px 0 0 0;
+                                font-size: 36px;
+                                color: #aaa;
+                                font-weight: 900;
+                            }
+                            a{
+                                display: inline-block;
+                                width: 170px;
+                                height: 48px;
+                                line-height: 48px;
+                                background: $m;
+                                text-align: center;
+                                color: #fff;
+                                font-size: 14px;
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                }
+                // 主体-推荐
+                .recommend{
+                    padding: 60px 0 0;
+                    .recommend-title{
+                        position: relative;
+                        margin: 0;
+                        height: 50px;
+                        font-size: 30px;
+                        font-weight: 400;
+                        color: #757575;
+                        border-top: 1px solid #e0e0e0;
+                        span{
+                            position: absolute;
+                            top: -20px;
+                            left: 372px;
+                            height: 40px;
+                            width: 482px;
+                            line-height: 40px;
+                            text-align: center;
+                            display: block;
+                            background-color: #f5f5f5;
+                        }
+                    }
+                    .recommend-goods{
+                        .recommend-list{
+                            margin: 0 0 0 -14px;
+                            padding: 0;
+                            .recommend-item{
+                                float: left;
+                                width: 234px;
+                                height: 300px;
+                                margin: 0 0 14px 14px;
+                                padding: 0;
+                                position: relative;
+                                overflow: hidden;
+                                list-style: none;
+                                background-color: #fff;
+                                text-align: center; 
+                                .recommend-link{
+                                    .recommend-img{
+                                        img{
+                                            display: block;
+                                            margin: 40px auto 20px;
+                                            width: 140px;
+                                            height: 140px;
+                                        }
+                                    }
+                                    .recommend-name{
+                                        margin: 0 10px 10px;
+                                        height: 18px;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        color: #333;
+                                    }
+                                    .recommend-price{
+                                        margin-bottom: 10px;
+                                        color: $m;
+                                    }
+                                    .recommend-evaluate{
+                                        position: relative;
+                                        color: #757575;
+                                    }
+                                }
+                                .recommend-b{
+                                    width: 100%;
+                                    position: absolute;
+                                    bottom: -50px;
+                                    transition: all .4s;
+                                    a{
+                                        color: $m;
+                                        display: inline-block;
+                                        width: 122px;
+                                        height: 30px;
+                                        line-height: 30px;
+                                        text-align: center;
+                                        border: 1px solid $m;
+                                        background: #fff;
+                                        transition: all .3s;
+                                        &:hover{
+                                            background: $m;
+                                            color: #fff;
+                                        }
+                                    }
+                                } 
+                                &:hover .recommend-b{
+                                    bottom: 20px;
+                                    z-index: 10;
+                                }                         
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -1,0 +1,18 @@
+[
+    {
+        "goodsName": "小米智能门锁 推拉式",
+        "goodsDesc": "适用于标准锁体和霸王锁体 / 直插式C级锁芯 / 6种开锁方式，支持小米手环4 NFC版开锁 / 7重安全状态检测 / 抵御小黑盒攻击 / 智能联动",
+        "goodsPriceN": "1599元",
+        "goodsPriceR": "1699元",
+        "goodsTypeT": "选择颜色",
+        "goodsTypeC": "黑色款",
+        "goodsImg1": "./img/goods5.jpg",
+        "goodsImg2": "./img/goods6.jpg",
+        "goodsImg3": "./img/goods7.jpg",
+        "goodsImg4": "./a1.jpg",
+        "goodsImg5": "./a2.jpg",
+        "goodsImg6": "./a3.jpg",
+        "goodsImg7": "./a4.jpg",
+        "type": "swiper"      
+    }
+]
