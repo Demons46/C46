@@ -162,6 +162,28 @@ $m: #ff6700;
             color: rgba(0,0,0,.54);
             font-size: 15px;
           }
+          .timeout{
+            width: 168px;
+            margin: 28px auto 0;
+            span{
+              width: 46px;
+              height: 46px;
+              background: #605751;
+              color: #fff;
+              font-size: 24px;
+              line-height: 46px;
+              float: left;
+            }
+            i{
+              width: 15px;
+              float: left;
+              height: 46px;
+              line-height: 46px;
+              color: #605751;
+              font-size: 28px;
+              font-style: normal;
+            }
+          }
         }
         // 商品轮播
         .info-goods{

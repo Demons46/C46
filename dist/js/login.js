@@ -3,12 +3,14 @@
 // 获取所需要用到的值
 var user = document.querySelector('.ipt-user');
 var pwd = document.querySelector('.ipt-pwd');
-var login = document.querySelector('.sub-login'); // 当点击登录按钮时
+var login = document.querySelector('.login'); // 当点击登录按钮时
 
 login.onclick = function () {
   // 获取账号密码
   var userVal = user.value;
-  var pwdVal = pwd.value; // 空值判断
+  var pwdVal = pwd.value;
+  console.log(userVal);
+  console.log(pwdVal); // 空值判断
 
   if (!userVal || !pwdVal) {
     alert('账号或密码不能为空');
@@ -18,7 +20,7 @@ login.onclick = function () {
 
   ajax({
     url: "../php/login-r.php",
-    type: "POST",
+    type: "post",
     data: {
       user: userVal,
       pwd: pwdVal,

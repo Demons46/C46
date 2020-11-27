@@ -54,7 +54,7 @@ html, body {
             text-align: center;
             margin-top: 20px;
             margin-bottom: 15px; }
-            html #app .wrap .container .mi-login .login-info .info-sub .sub-login, body #app .wrap .container .mi-login .login-info .info-sub .sub-login {
+            html #app .wrap .container .mi-login .login-info .info-sub .login, body #app .wrap .container .mi-login .login-info .info-sub .login {
               width: 340px;
               height: 45px;
               text-align: center;

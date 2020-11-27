@@ -1,27 +1,23 @@
 // 获取所需要用到的值
-var user = document.querySelector('.ipt-user');
-var pwd = document.querySelector('.ipt-pwd');
-var login = document.querySelector('.login');
-// 当点击登录按钮时
-login.onclick = function(){
-    // 获取账号密码
+var user = document.querySelector('.user');
+var pwd = document.querySelector('.pwd');
+var register = document.querySelector('.register');
+//注册
+register.onclick = function () {
     var userVal = user.value;
     var pwdVal = pwd.value;
-    console.log(userVal);
-    console.log(pwdVal);
-    // 空值判断
+    // 验证
     if (!userVal || !pwdVal) {
-        alert('账号或密码不能为空');
         return;
     }
-    // ajax请求
+    //调用ajax
     ajax({
-        url: "../php/login-r.php",
+        url: "./php/login-r.php",
         type: "post",
         data: {
             user: userVal,
             pwd: pwdVal,
-            type: "login"
+            type: "register"
         },
         dataType: "json",
         success: function (json) {
